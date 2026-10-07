@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "verified_condition_question_rows": 1065,
+  "verified_metric_cells": 4260,
+  "baseline_rows_reproduced": 120,
+  "source_files_unchanged": true,
+  "finite_normalized_vectors": true,
+  "query_and_chunk_order_verified": true,
+  "independent_sort_and_scoring": true,
+  "gold_mapping_recomputed": true,
+  "paid_api_calls": 0
+}

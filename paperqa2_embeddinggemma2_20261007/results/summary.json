@@ -1,0 +1,1150 @@
+{
+  "status": "COMPLETE",
+  "date_kst": "2026-10-07",
+  "datasets": {
+    "multi": {
+      "gemma_ko": {
+        "label": "EmbeddingGemma 2 한국어 단독",
+        "model": "gemma",
+        "language": "ko",
+        "kind": "single",
+        "n": 30,
+        "hit_at_5": 7,
+        "hit_at_10": 8,
+        "hit_at_20": 10,
+        "hit_at_25": 10,
+        "partial_at_25": 0.6411111111111112,
+        "doc_hits": 52,
+        "doc_total": 82,
+        "by_document_language": {
+          "ko": {
+            "required_document_occurrences": 21,
+            "hits": 19
+          },
+          "en": {
+            "required_document_occurrences": 28,
+            "hits": 13
+          },
+          "zh": {
+            "required_document_occurrences": 10,
+            "hits": 5
+          },
+          "ja": {
+            "required_document_occurrences": 3,
+            "hits": 1
+          },
+          "kohanja": {
+            "required_document_occurrences": 20,
+            "hits": 14
+          }
+        }
+      },
+      "gemma_en": {
+        "label": "EmbeddingGemma 2 영어 단독",
+        "model": "gemma",
+        "language": "en",
+        "kind": "single",
+        "n": 30,
+        "hit_at_5": 5,
+        "hit_at_10": 8,
+        "hit_at_20": 11,
+        "hit_at_25": 13,
+        "partial_at_25": 0.638888888888889,
+        "doc_hits": 54,
+        "doc_total": 82,
+        "by_document_language": {
+          "ko": {
+            "required_document_occurrences": 21,
+            "hits": 15
+          },
+          "en": {
+            "required_document_occurrences": 28,
+            "hits": 23
+          },
+          "zh": {
+            "required_document_occurrences": 10,
+            "hits": 3
+          },
+          "ja": {
+            "required_document_occurrences": 3,
+            "hits": 1
+          },
+          "kohanja": {
+            "required_document_occurrences": 20,
+            "hits": 12
+          }
+        }
+      },
+      "q4_ko": {
+        "label": "Qwen 4B 한국어 단독",
+        "model": "q4",
+        "language": "ko",
+        "kind": "single",
+        "n": 30,
+        "hit_at_5": 12,
+        "hit_at_10": 18,
+        "hit_at_20": 19,
+        "hit_at_25": 22,
+        "partial_at_25": 0.8666666666666667,
+        "doc_hits": 70,
+        "doc_total": 82,
+        "by_document_language": {
+          "ko": {
+            "required_document_occurrences": 21,
+            "hits": 19
+          },
+          "en": {
+            "required_document_occurrences": 28,
+            "hits": 25
+          },
+          "zh": {
+            "required_document_occurrences": 10,
+            "hits": 7
+          },
+          "ja": {
+            "required_document_occurrences": 3,
+            "hits": 2
+          },
+          "kohanja": {
+            "required_document_occurrences": 20,
+            "hits": 17
+          }
+        }
+      },
+      "q4_en": {
+        "label": "Qwen 4B 영어 단독",
+        "model": "q4",
+        "language": "en",
+        "kind": "single",
+        "n": 30,
+        "hit_at_5": 9,
+        "hit_at_10": 11,
+        "hit_at_20": 16,
+        "hit_at_25": 17,
+        "partial_at_25": 0.775,
+        "doc_hits": 63,
+        "doc_total": 82,
+        "by_document_language": {
+          "ko": {
+            "required_document_occurrences": 21,
+            "hits": 15
+          },
+          "en": {
+            "required_document_occurrences": 28,
+            "hits": 25
+          },
+          "zh": {
+            "required_document_occurrences": 10,
+            "hits": 7
+          },
+          "ja": {
+            "required_document_occurrences": 3,
+            "hits": 2
+          },
+          "kohanja": {
+            "required_document_occurrences": 20,
+            "hits": 14
+          }
+        }
+      },
+      "q8_ko": {
+        "label": "Qwen 8B 한국어 단독",
+        "model": "q8",
+        "language": "ko",
+        "kind": "single",
+        "n": 30,
+        "hit_at_5": 13,
+        "hit_at_10": 14,
+        "hit_at_20": 19,
+        "hit_at_25": 21,
+        "partial_at_25": 0.8477777777777777,
+        "doc_hits": 67,
+        "doc_total": 82,
+        "by_document_language": {
+          "ko": {
+            "required_document_occurrences": 21,
+            "hits": 19
+          },
+          "en": {
+            "required_document_occurrences": 28,
+            "hits": 22
+          },
+          "zh": {
+            "required_document_occurrences": 10,
+            "hits": 7
+          },
+          "ja": {
+            "required_document_occurrences": 3,
+            "hits": 2
+          },
+          "kohanja": {
+            "required_document_occurrences": 20,
+            "hits": 17
+          }
+        }
+      },
+      "q8_en": {
+        "label": "Qwen 8B 영어 단독",
+        "model": "q8",
+        "language": "en",
+        "kind": "single",
+        "n": 30,
+        "hit_at_5": 11,
+        "hit_at_10": 15,
+        "hit_at_20": 19,
+        "hit_at_25": 20,
+        "partial_at_25": 0.8583333333333333,
+        "doc_hits": 69,
+        "doc_total": 82,
+        "by_document_language": {
+          "ko": {
+            "required_document_occurrences": 21,
+            "hits": 18
+          },
+          "en": {
+            "required_document_occurrences": 28,
+            "hits": 26
+          },
+          "zh": {
+            "required_document_occurrences": 10,
+            "hits": 8
+          },
+          "ja": {
+            "required_document_occurrences": 3,
+            "hits": 2
+          },
+          "kohanja": {
+            "required_document_occurrences": 20,
+            "hits": 15
+          }
+        }
+      },
+      "bge_ko": {
+        "label": "BGE-m3-ko 한국어 단독",
+        "model": "bge",
+        "language": "ko",
+        "kind": "single",
+        "n": 30,
+        "hit_at_5": 5,
+        "hit_at_10": 5,
+        "hit_at_20": 11,
+        "hit_at_25": 12,
+        "partial_at_25": 0.7166666666666667,
+        "doc_hits": 57,
+        "doc_total": 82,
+        "by_document_language": {
+          "ko": {
+            "required_document_occurrences": 21,
+            "hits": 18
+          },
+          "en": {
+            "required_document_occurrences": 28,
+            "hits": 12
+          },
+          "zh": {
+            "required_document_occurrences": 10,
+            "hits": 7
+          },
+          "ja": {
+            "required_document_occurrences": 3,
+            "hits": 2
+          },
+          "kohanja": {
+            "required_document_occurrences": 20,
+            "hits": 18
+          }
+        }
+      },
+      "bge_en": {
+        "label": "BGE-m3-ko 영어 단독",
+        "model": "bge",
+        "language": "en",
+        "kind": "single",
+        "n": 30,
+        "hit_at_5": 7,
+        "hit_at_10": 9,
+        "hit_at_20": 11,
+        "hit_at_25": 13,
+        "partial_at_25": 0.6988888888888888,
+        "doc_hits": 58,
+        "doc_total": 82,
+        "by_document_language": {
+          "ko": {
+            "required_document_occurrences": 21,
+            "hits": 14
+          },
+          "en": {
+            "required_document_occurrences": 28,
+            "hits": 25
+          },
+          "zh": {
+            "required_document_occurrences": 10,
+            "hits": 4
+          },
+          "ja": {
+            "required_document_occurrences": 3,
+            "hits": 2
+          },
+          "kohanja": {
+            "required_document_occurrences": 20,
+            "hits": 13
+          }
+        }
+      },
+      "A": {
+        "label": "Qwen 4B / BGE-m3-ko",
+        "ko": "q4",
+        "en": "bge",
+        "kind": "fusion",
+        "n": 30,
+        "hit_at_5": 10,
+        "hit_at_10": 15,
+        "hit_at_20": 22,
+        "hit_at_25": 23,
+        "partial_at_25": 0.8944444444444444,
+        "doc_hits": 72,
+        "doc_total": 82,
+        "by_document_language": {
+          "ko": {
+            "required_document_occurrences": 21,
+            "hits": 19
+          },
+          "en": {
+            "required_document_occurrences": 28,
+            "hits": 26
+          },
+          "zh": {
+            "required_document_occurrences": 10,
+            "hits": 7
+          },
+          "ja": {
+            "required_document_occurrences": 3,
+            "hits": 2
+          },
+          "kohanja": {
+            "required_document_occurrences": 20,
+            "hits": 18
+          }
+        }
+      },
+      "B": {
+        "label": "Qwen 8B / BGE-m3-ko",
+        "ko": "q8",
+        "en": "bge",
+        "kind": "fusion",
+        "n": 30,
+        "hit_at_5": 8,
+        "hit_at_10": 15,
+        "hit_at_20": 22,
+        "hit_at_25": 22,
+        "partial_at_25": 0.8777777777777778,
+        "doc_hits": 71,
+        "doc_total": 82,
+        "by_document_language": {
+          "ko": {
+            "required_document_occurrences": 21,
+            "hits": 19
+          },
+          "en": {
+            "required_document_occurrences": 28,
+            "hits": 26
+          },
+          "zh": {
+            "required_document_occurrences": 10,
+            "hits": 6
+          },
+          "ja": {
+            "required_document_occurrences": 3,
+            "hits": 2
+          },
+          "kohanja": {
+            "required_document_occurrences": 20,
+            "hits": 18
+          }
+        }
+      },
+      "C": {
+        "label": "Qwen 4B / Qwen 4B",
+        "ko": "q4",
+        "en": "q4",
+        "kind": "fusion",
+        "n": 30,
+        "hit_at_5": 12,
+        "hit_at_10": 17,
+        "hit_at_20": 22,
+        "hit_at_25": 22,
+        "partial_at_25": 0.8638888888888889,
+        "doc_hits": 70,
+        "doc_total": 82,
+        "by_document_language": {
+          "ko": {
+            "required_document_occurrences": 21,
+            "hits": 18
+          },
+          "en": {
+            "required_document_occurrences": 28,
+            "hits": 25
+          },
+          "zh": {
+            "required_document_occurrences": 10,
+            "hits": 8
+          },
+          "ja": {
+            "required_document_occurrences": 3,
+            "hits": 2
+          },
+          "kohanja": {
+            "required_document_occurrences": 20,
+            "hits": 17
+          }
+        }
+      },
+      "D": {
+        "label": "Qwen 8B / Qwen 8B",
+        "ko": "q8",
+        "en": "q8",
+        "kind": "fusion",
+        "n": 30,
+        "hit_at_5": 13,
+        "hit_at_10": 15,
+        "hit_at_20": 21,
+        "hit_at_25": 23,
+        "partial_at_25": 0.8833333333333333,
+        "doc_hits": 71,
+        "doc_total": 82,
+        "by_document_language": {
+          "ko": {
+            "required_document_occurrences": 21,
+            "hits": 19
+          },
+          "en": {
+            "required_document_occurrences": 28,
+            "hits": 26
+          },
+          "zh": {
+            "required_document_occurrences": 10,
+            "hits": 7
+          },
+          "ja": {
+            "required_document_occurrences": 3,
+            "hits": 2
+          },
+          "kohanja": {
+            "required_document_occurrences": 20,
+            "hits": 17
+          }
+        }
+      },
+      "E": {
+        "label": "EmbeddingGemma 2 / EmbeddingGemma 2",
+        "ko": "gemma",
+        "en": "gemma",
+        "kind": "fusion",
+        "n": 30,
+        "hit_at_5": 8,
+        "hit_at_10": 10,
+        "hit_at_20": 11,
+        "hit_at_25": 12,
+        "partial_at_25": 0.6822222222222222,
+        "doc_hits": 56,
+        "doc_total": 82,
+        "by_document_language": {
+          "ko": {
+            "required_document_occurrences": 21,
+            "hits": 18
+          },
+          "en": {
+            "required_document_occurrences": 28,
+            "hits": 20
+          },
+          "zh": {
+            "required_document_occurrences": 10,
+            "hits": 5
+          },
+          "ja": {
+            "required_document_occurrences": 3,
+            "hits": 1
+          },
+          "kohanja": {
+            "required_document_occurrences": 20,
+            "hits": 12
+          }
+        }
+      },
+      "F": {
+        "label": "EmbeddingGemma 2 / BGE-m3-ko",
+        "ko": "gemma",
+        "en": "bge",
+        "kind": "fusion",
+        "n": 30,
+        "hit_at_5": 7,
+        "hit_at_10": 11,
+        "hit_at_20": 14,
+        "hit_at_25": 15,
+        "partial_at_25": 0.7544444444444445,
+        "doc_hits": 62,
+        "doc_total": 82,
+        "by_document_language": {
+          "ko": {
+            "required_document_occurrences": 21,
+            "hits": 18
+          },
+          "en": {
+            "required_document_occurrences": 28,
+            "hits": 23
+          },
+          "zh": {
+            "required_document_occurrences": 10,
+            "hits": 6
+          },
+          "ja": {
+            "required_document_occurrences": 3,
+            "hits": 1
+          },
+          "kohanja": {
+            "required_document_occurrences": 20,
+            "hits": 14
+          }
+        }
+      },
+      "G": {
+        "label": "Qwen 4B / EmbeddingGemma 2",
+        "ko": "q4",
+        "en": "gemma",
+        "kind": "fusion",
+        "n": 30,
+        "hit_at_5": 9,
+        "hit_at_10": 12,
+        "hit_at_20": 22,
+        "hit_at_25": 22,
+        "partial_at_25": 0.8555555555555556,
+        "doc_hits": 69,
+        "doc_total": 82,
+        "by_document_language": {
+          "ko": {
+            "required_document_occurrences": 21,
+            "hits": 18
+          },
+          "en": {
+            "required_document_occurrences": 28,
+            "hits": 25
+          },
+          "zh": {
+            "required_document_occurrences": 10,
+            "hits": 7
+          },
+          "ja": {
+            "required_document_occurrences": 3,
+            "hits": 2
+          },
+          "kohanja": {
+            "required_document_occurrences": 20,
+            "hits": 17
+          }
+        }
+      }
+    },
+    "gold": {
+      "gemma_ko": {
+        "label": "EmbeddingGemma 2 한국어 단독",
+        "model": "gemma",
+        "language": "ko",
+        "kind": "single",
+        "n": 41,
+        "hit_at_5": 24,
+        "hit_at_10": 25,
+        "hit_at_20": 31,
+        "hit_at_25": 31,
+        "mrr_at_25": 0.4173402139865554,
+        "by_document_language": {
+          "ko": {
+            "n": 5,
+            "hit_at_25": 5
+          },
+          "en": {
+            "n": 12,
+            "hit_at_25": 9
+          },
+          "zh": {
+            "n": 12,
+            "hit_at_25": 6
+          },
+          "ja": {
+            "n": 4,
+            "hit_at_25": 3
+          },
+          "kohanja": {
+            "n": 8,
+            "hit_at_25": 8
+          }
+        }
+      },
+      "gemma_en": {
+        "label": "EmbeddingGemma 2 영어 단독",
+        "model": "gemma",
+        "language": "en",
+        "kind": "single",
+        "n": 41,
+        "hit_at_5": 24,
+        "hit_at_10": 26,
+        "hit_at_20": 34,
+        "hit_at_25": 36,
+        "mrr_at_25": 0.4581226244004611,
+        "by_document_language": {
+          "ko": {
+            "n": 5,
+            "hit_at_25": 5
+          },
+          "en": {
+            "n": 12,
+            "hit_at_25": 11
+          },
+          "zh": {
+            "n": 12,
+            "hit_at_25": 8
+          },
+          "ja": {
+            "n": 4,
+            "hit_at_25": 4
+          },
+          "kohanja": {
+            "n": 8,
+            "hit_at_25": 8
+          }
+        }
+      },
+      "q4_ko": {
+        "label": "Qwen 4B 한국어 단독",
+        "model": "q4",
+        "language": "ko",
+        "kind": "single",
+        "n": 41,
+        "hit_at_5": 30,
+        "hit_at_10": 37,
+        "hit_at_20": 37,
+        "hit_at_25": 38,
+        "mrr_at_25": 0.5337669376693767,
+        "by_document_language": {
+          "ko": {
+            "n": 5,
+            "hit_at_25": 5
+          },
+          "en": {
+            "n": 12,
+            "hit_at_25": 11
+          },
+          "zh": {
+            "n": 12,
+            "hit_at_25": 10
+          },
+          "ja": {
+            "n": 4,
+            "hit_at_25": 4
+          },
+          "kohanja": {
+            "n": 8,
+            "hit_at_25": 8
+          }
+        }
+      },
+      "q4_en": {
+        "label": "Qwen 4B 영어 단독",
+        "model": "q4",
+        "language": "en",
+        "kind": "single",
+        "n": 41,
+        "hit_at_5": 29,
+        "hit_at_10": 34,
+        "hit_at_20": 38,
+        "hit_at_25": 39,
+        "mrr_at_25": 0.5143597238226394,
+        "by_document_language": {
+          "ko": {
+            "n": 5,
+            "hit_at_25": 5
+          },
+          "en": {
+            "n": 12,
+            "hit_at_25": 12
+          },
+          "zh": {
+            "n": 12,
+            "hit_at_25": 10
+          },
+          "ja": {
+            "n": 4,
+            "hit_at_25": 4
+          },
+          "kohanja": {
+            "n": 8,
+            "hit_at_25": 8
+          }
+        }
+      },
+      "q8_ko": {
+        "label": "Qwen 8B 한국어 단독",
+        "model": "q8",
+        "language": "ko",
+        "kind": "single",
+        "n": 41,
+        "hit_at_5": 30,
+        "hit_at_10": 36,
+        "hit_at_20": 38,
+        "hit_at_25": 38,
+        "mrr_at_25": 0.5652439024390244,
+        "by_document_language": {
+          "ko": {
+            "n": 5,
+            "hit_at_25": 5
+          },
+          "en": {
+            "n": 12,
+            "hit_at_25": 12
+          },
+          "zh": {
+            "n": 12,
+            "hit_at_25": 9
+          },
+          "ja": {
+            "n": 4,
+            "hit_at_25": 4
+          },
+          "kohanja": {
+            "n": 8,
+            "hit_at_25": 8
+          }
+        }
+      },
+      "q8_en": {
+        "label": "Qwen 8B 영어 단독",
+        "model": "q8",
+        "language": "en",
+        "kind": "single",
+        "n": 41,
+        "hit_at_5": 29,
+        "hit_at_10": 35,
+        "hit_at_20": 37,
+        "hit_at_25": 38,
+        "mrr_at_25": 0.49735835479472806,
+        "by_document_language": {
+          "ko": {
+            "n": 5,
+            "hit_at_25": 5
+          },
+          "en": {
+            "n": 12,
+            "hit_at_25": 12
+          },
+          "zh": {
+            "n": 12,
+            "hit_at_25": 9
+          },
+          "ja": {
+            "n": 4,
+            "hit_at_25": 4
+          },
+          "kohanja": {
+            "n": 8,
+            "hit_at_25": 8
+          }
+        }
+      },
+      "bge_ko": {
+        "label": "BGE-m3-ko 한국어 단독",
+        "model": "bge",
+        "language": "ko",
+        "kind": "single",
+        "n": 41,
+        "hit_at_5": 29,
+        "hit_at_10": 33,
+        "hit_at_20": 38,
+        "hit_at_25": 38,
+        "mrr_at_25": 0.5309830851437738,
+        "by_document_language": {
+          "ko": {
+            "n": 5,
+            "hit_at_25": 5
+          },
+          "en": {
+            "n": 12,
+            "hit_at_25": 11
+          },
+          "zh": {
+            "n": 12,
+            "hit_at_25": 10
+          },
+          "ja": {
+            "n": 4,
+            "hit_at_25": 4
+          },
+          "kohanja": {
+            "n": 8,
+            "hit_at_25": 8
+          }
+        }
+      },
+      "bge_en": {
+        "label": "BGE-m3-ko 영어 단독",
+        "model": "bge",
+        "language": "en",
+        "kind": "single",
+        "n": 41,
+        "hit_at_5": 27,
+        "hit_at_10": 31,
+        "hit_at_20": 35,
+        "hit_at_25": 37,
+        "mrr_at_25": 0.48544223210026965,
+        "by_document_language": {
+          "ko": {
+            "n": 5,
+            "hit_at_25": 4
+          },
+          "en": {
+            "n": 12,
+            "hit_at_25": 12
+          },
+          "zh": {
+            "n": 12,
+            "hit_at_25": 10
+          },
+          "ja": {
+            "n": 4,
+            "hit_at_25": 4
+          },
+          "kohanja": {
+            "n": 8,
+            "hit_at_25": 7
+          }
+        }
+      },
+      "A": {
+        "label": "Qwen 4B / BGE-m3-ko",
+        "ko": "q4",
+        "en": "bge",
+        "kind": "fusion",
+        "n": 41,
+        "hit_at_5": 28,
+        "hit_at_10": 35,
+        "hit_at_20": 39,
+        "hit_at_25": 39,
+        "mrr_at_25": 0.5205835492420858,
+        "by_document_language": {
+          "ko": {
+            "n": 5,
+            "hit_at_25": 5
+          },
+          "en": {
+            "n": 12,
+            "hit_at_25": 12
+          },
+          "zh": {
+            "n": 12,
+            "hit_at_25": 10
+          },
+          "ja": {
+            "n": 4,
+            "hit_at_25": 4
+          },
+          "kohanja": {
+            "n": 8,
+            "hit_at_25": 8
+          }
+        }
+      },
+      "B": {
+        "label": "Qwen 8B / BGE-m3-ko",
+        "ko": "q8",
+        "en": "bge",
+        "kind": "fusion",
+        "n": 41,
+        "hit_at_5": 31,
+        "hit_at_10": 37,
+        "hit_at_20": 38,
+        "hit_at_25": 39,
+        "mrr_at_25": 0.5251491615489494,
+        "by_document_language": {
+          "ko": {
+            "n": 5,
+            "hit_at_25": 5
+          },
+          "en": {
+            "n": 12,
+            "hit_at_25": 12
+          },
+          "zh": {
+            "n": 12,
+            "hit_at_25": 10
+          },
+          "ja": {
+            "n": 4,
+            "hit_at_25": 4
+          },
+          "kohanja": {
+            "n": 8,
+            "hit_at_25": 8
+          }
+        }
+      },
+      "C": {
+        "label": "Qwen 4B / Qwen 4B",
+        "ko": "q4",
+        "en": "q4",
+        "kind": "fusion",
+        "n": 41,
+        "hit_at_5": 30,
+        "hit_at_10": 36,
+        "hit_at_20": 38,
+        "hit_at_25": 39,
+        "mrr_at_25": 0.563227411212565,
+        "by_document_language": {
+          "ko": {
+            "n": 5,
+            "hit_at_25": 5
+          },
+          "en": {
+            "n": 12,
+            "hit_at_25": 12
+          },
+          "zh": {
+            "n": 12,
+            "hit_at_25": 10
+          },
+          "ja": {
+            "n": 4,
+            "hit_at_25": 4
+          },
+          "kohanja": {
+            "n": 8,
+            "hit_at_25": 8
+          }
+        }
+      },
+      "D": {
+        "label": "Qwen 8B / Qwen 8B",
+        "ko": "q8",
+        "en": "q8",
+        "kind": "fusion",
+        "n": 41,
+        "hit_at_5": 31,
+        "hit_at_10": 37,
+        "hit_at_20": 38,
+        "hit_at_25": 38,
+        "mrr_at_25": 0.5911038148843027,
+        "by_document_language": {
+          "ko": {
+            "n": 5,
+            "hit_at_25": 5
+          },
+          "en": {
+            "n": 12,
+            "hit_at_25": 12
+          },
+          "zh": {
+            "n": 12,
+            "hit_at_25": 9
+          },
+          "ja": {
+            "n": 4,
+            "hit_at_25": 4
+          },
+          "kohanja": {
+            "n": 8,
+            "hit_at_25": 8
+          }
+        }
+      },
+      "E": {
+        "label": "EmbeddingGemma 2 / EmbeddingGemma 2",
+        "ko": "gemma",
+        "en": "gemma",
+        "kind": "fusion",
+        "n": 41,
+        "hit_at_5": 25,
+        "hit_at_10": 28,
+        "hit_at_20": 35,
+        "hit_at_25": 35,
+        "mrr_at_25": 0.4870587959323518,
+        "by_document_language": {
+          "ko": {
+            "n": 5,
+            "hit_at_25": 5
+          },
+          "en": {
+            "n": 12,
+            "hit_at_25": 11
+          },
+          "zh": {
+            "n": 12,
+            "hit_at_25": 7
+          },
+          "ja": {
+            "n": 4,
+            "hit_at_25": 4
+          },
+          "kohanja": {
+            "n": 8,
+            "hit_at_25": 8
+          }
+        }
+      },
+      "F": {
+        "label": "EmbeddingGemma 2 / BGE-m3-ko",
+        "ko": "gemma",
+        "en": "bge",
+        "kind": "fusion",
+        "n": 41,
+        "hit_at_5": 27,
+        "hit_at_10": 30,
+        "hit_at_20": 37,
+        "hit_at_25": 39,
+        "mrr_at_25": 0.4722779961947824,
+        "by_document_language": {
+          "ko": {
+            "n": 5,
+            "hit_at_25": 5
+          },
+          "en": {
+            "n": 12,
+            "hit_at_25": 12
+          },
+          "zh": {
+            "n": 12,
+            "hit_at_25": 10
+          },
+          "ja": {
+            "n": 4,
+            "hit_at_25": 4
+          },
+          "kohanja": {
+            "n": 8,
+            "hit_at_25": 8
+          }
+        }
+      },
+      "G": {
+        "label": "Qwen 4B / EmbeddingGemma 2",
+        "ko": "q4",
+        "en": "gemma",
+        "kind": "fusion",
+        "n": 41,
+        "hit_at_5": 27,
+        "hit_at_10": 35,
+        "hit_at_20": 39,
+        "hit_at_25": 39,
+        "mrr_at_25": 0.5240178859081298,
+        "by_document_language": {
+          "ko": {
+            "n": 5,
+            "hit_at_25": 5
+          },
+          "en": {
+            "n": 12,
+            "hit_at_25": 12
+          },
+          "zh": {
+            "n": 12,
+            "hit_at_25": 10
+          },
+          "ja": {
+            "n": 4,
+            "hit_at_25": 4
+          },
+          "kohanja": {
+            "n": 8,
+            "hit_at_25": 8
+          }
+        }
+      }
+    }
+  },
+  "gold_total": 45,
+  "gold_scoreable": 41,
+  "excluded": [
+    {
+      "question_id": "q09",
+      "doc_id": "en_03",
+      "reason": "No normalized answer span in frozen corpus"
+    },
+    {
+      "question_id": "q15",
+      "doc_id": "en_01",
+      "reason": "No normalized answer span in frozen corpus"
+    },
+    {
+      "question_id": "q24",
+      "doc_id": "ko_03",
+      "reason": "No normalized answer span in frozen corpus"
+    },
+    {
+      "question_id": "q23",
+      "doc_id": "ko_03",
+      "reason": "No normalized answer span in frozen corpus"
+    }
+  ],
+  "efficiency": {
+    "gemma": {
+      "search_and_rank_150_queries_seconds": 0.008256800007075071,
+      "new_embeddings": 1012,
+      "dtype": "torch.bfloat16",
+      "attention": "sdpa",
+      "device": "NVIDIA GeForce RTX 3090 Ti",
+      "load_seconds": 2.456434699939564,
+      "smoke_seconds": 0.5378688999917358,
+      "embedding_seconds": 66.84330790000968,
+      "document_embedding_seconds": 57.0081737000728,
+      "query_embedding_seconds": 9.835134199936874,
+      "peak_allocated_vram_GiB": 0.6620883941650391,
+      "max_tokens": 1292,
+      "token_limit": 8192,
+      "truncation": false,
+      "document_vector_bytes": 2648064,
+      "query_vector_bytes": 460800
+    },
+    "q4": {
+      "search_and_rank_150_queries_seconds": 0.008520699921064079,
+      "new_embeddings": 90,
+      "dtype": "torch.bfloat16",
+      "attention": "sdpa",
+      "device": "NVIDIA GeForce RTX 3090 Ti",
+      "load_seconds": 6.053087800042704,
+      "smoke_seconds": 0.5714765000157058,
+      "embedding_seconds": 6.494003599975258,
+      "document_embedding_seconds": null,
+      "query_embedding_seconds": 6.494003599975258,
+      "peak_allocated_vram_GiB": 7.569616794586182,
+      "max_tokens": 66,
+      "token_limit": 40960,
+      "truncation": false,
+      "document_vector_bytes": 8826880,
+      "query_vector_bytes": 1536000
+    },
+    "q8": {
+      "search_and_rank_150_queries_seconds": 0.013528899988159537,
+      "new_embeddings": 90,
+      "dtype": "torch.bfloat16",
+      "attention": "sdpa",
+      "device": "NVIDIA GeForce RTX 3090 Ti",
+      "load_seconds": 10.550390599993989,
+      "smoke_seconds": 0.5474209999665618,
+      "embedding_seconds": 6.2312071999767795,
+      "document_embedding_seconds": null,
+      "query_embedding_seconds": 6.2312071999767795,
+      "peak_allocated_vram_GiB": 14.122058391571045,
+      "max_tokens": 66,
+      "token_limit": 40960,
+      "truncation": false,
+      "document_vector_bytes": 14123008,
+      "query_vector_bytes": 2457600
+    },
+    "bge": {
+      "search_and_rank_150_queries_seconds": 0.007971699931658804,
+      "new_embeddings": 0,
+      "note": "Existing verified vectors reused",
+      "document_vector_bytes": 3530752,
+      "query_vector_bytes": 614400
+    }
+  },
+  "paid_api_calls": 0,
+  "answer_generation": false,
+  "baseline_rows_reproduced": 120
+}
