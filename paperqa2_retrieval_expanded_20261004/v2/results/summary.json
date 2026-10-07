@@ -1,0 +1,517 @@
+{
+  "status": "COMPLETE",
+  "unique_retrievals": 180,
+  "expected_retrievals": 180,
+  "completed_models": [
+    "bge",
+    "kure",
+    "qwen"
+  ],
+  "by_model_language": [
+    {
+      "model": "bge",
+      "language": "ko",
+      "count": 30,
+      "full_hit_at_5": 5,
+      "full_hit_at_10": 5,
+      "full_hit_at_20": 11,
+      "partial_at_10": 0.525
+    },
+    {
+      "model": "bge",
+      "language": "en",
+      "count": 30,
+      "full_hit_at_5": 7,
+      "full_hit_at_10": 9,
+      "full_hit_at_20": 11,
+      "partial_at_10": 0.5655555555555555
+    },
+    {
+      "model": "kure",
+      "language": "ko",
+      "count": 30,
+      "full_hit_at_5": 4,
+      "full_hit_at_10": 9,
+      "full_hit_at_20": 12,
+      "partial_at_10": 0.5644444444444444
+    },
+    {
+      "model": "kure",
+      "language": "en",
+      "count": 30,
+      "full_hit_at_5": 6,
+      "full_hit_at_10": 8,
+      "full_hit_at_20": 9,
+      "partial_at_10": 0.5399999999999999
+    },
+    {
+      "model": "qwen",
+      "language": "ko",
+      "count": 30,
+      "full_hit_at_5": 12,
+      "full_hit_at_10": 18,
+      "full_hit_at_20": 19,
+      "partial_at_10": 0.7833333333333333
+    },
+    {
+      "model": "qwen",
+      "language": "en",
+      "count": 30,
+      "full_hit_at_5": 9,
+      "full_hit_at_10": 11,
+      "full_hit_at_20": 16,
+      "partial_at_10": 0.6144444444444445
+    }
+  ],
+  "conditions": [
+    {
+      "ko_model": "bge",
+      "en_model": "bge",
+      "count": 60,
+      "full_hit_at_5": 12,
+      "full_hit_at_10": 14,
+      "full_hit_at_20": 22,
+      "partial_at_10": 0.5452777777777779
+    },
+    {
+      "ko_model": "bge",
+      "en_model": "kure",
+      "count": 60,
+      "full_hit_at_5": 11,
+      "full_hit_at_10": 13,
+      "full_hit_at_20": 20,
+      "partial_at_10": 0.5325
+    },
+    {
+      "ko_model": "bge",
+      "en_model": "qwen",
+      "count": 60,
+      "full_hit_at_5": 14,
+      "full_hit_at_10": 16,
+      "full_hit_at_20": 27,
+      "partial_at_10": 0.5697222222222221
+    },
+    {
+      "ko_model": "kure",
+      "en_model": "bge",
+      "count": 60,
+      "full_hit_at_5": 11,
+      "full_hit_at_10": 18,
+      "full_hit_at_20": 23,
+      "partial_at_10": 0.565
+    },
+    {
+      "ko_model": "kure",
+      "en_model": "kure",
+      "count": 60,
+      "full_hit_at_5": 10,
+      "full_hit_at_10": 17,
+      "full_hit_at_20": 21,
+      "partial_at_10": 0.5522222222222222
+    },
+    {
+      "ko_model": "kure",
+      "en_model": "qwen",
+      "count": 60,
+      "full_hit_at_5": 13,
+      "full_hit_at_10": 20,
+      "full_hit_at_20": 28,
+      "partial_at_10": 0.5894444444444444
+    },
+    {
+      "ko_model": "qwen",
+      "en_model": "bge",
+      "count": 60,
+      "full_hit_at_5": 19,
+      "full_hit_at_10": 27,
+      "full_hit_at_20": 30,
+      "partial_at_10": 0.6744444444444445
+    },
+    {
+      "ko_model": "qwen",
+      "en_model": "kure",
+      "count": 60,
+      "full_hit_at_5": 18,
+      "full_hit_at_10": 26,
+      "full_hit_at_20": 28,
+      "partial_at_10": 0.6616666666666667
+    },
+    {
+      "ko_model": "qwen",
+      "en_model": "qwen",
+      "count": 60,
+      "full_hit_at_5": 21,
+      "full_hit_at_10": 29,
+      "full_hit_at_20": 35,
+      "partial_at_10": 0.6988888888888888
+    }
+  ],
+  "by_cohort": [
+    {
+      "model": "bge",
+      "language": "ko",
+      "cohort": "revised_from_baseline_6",
+      "count": 6,
+      "full_hit_at_5": 1,
+      "full_hit_at_10": 1,
+      "full_hit_at_20": 1,
+      "partial_at_10": 0.6388888888888888
+    },
+    {
+      "model": "bge",
+      "language": "ko",
+      "cohort": "revised_from_new_24",
+      "count": 24,
+      "full_hit_at_5": 4,
+      "full_hit_at_10": 4,
+      "full_hit_at_20": 10,
+      "partial_at_10": 0.49652777777777773
+    },
+    {
+      "model": "bge",
+      "language": "en",
+      "cohort": "revised_from_baseline_6",
+      "count": 6,
+      "full_hit_at_5": 1,
+      "full_hit_at_10": 1,
+      "full_hit_at_20": 1,
+      "partial_at_10": 0.5833333333333334
+    },
+    {
+      "model": "bge",
+      "language": "en",
+      "cohort": "revised_from_new_24",
+      "count": 24,
+      "full_hit_at_5": 6,
+      "full_hit_at_10": 8,
+      "full_hit_at_20": 10,
+      "partial_at_10": 0.5611111111111111
+    },
+    {
+      "model": "kure",
+      "language": "ko",
+      "cohort": "revised_from_baseline_6",
+      "count": 6,
+      "full_hit_at_5": 1,
+      "full_hit_at_10": 2,
+      "full_hit_at_20": 2,
+      "partial_at_10": 0.6944444444444445
+    },
+    {
+      "model": "kure",
+      "language": "ko",
+      "cohort": "revised_from_new_24",
+      "count": 24,
+      "full_hit_at_5": 3,
+      "full_hit_at_10": 7,
+      "full_hit_at_20": 10,
+      "partial_at_10": 0.5319444444444444
+    },
+    {
+      "model": "kure",
+      "language": "en",
+      "cohort": "revised_from_baseline_6",
+      "count": 6,
+      "full_hit_at_5": 0,
+      "full_hit_at_10": 1,
+      "full_hit_at_20": 1,
+      "partial_at_10": 0.5555555555555555
+    },
+    {
+      "model": "kure",
+      "language": "en",
+      "cohort": "revised_from_new_24",
+      "count": 24,
+      "full_hit_at_5": 6,
+      "full_hit_at_10": 7,
+      "full_hit_at_20": 8,
+      "partial_at_10": 0.5361111111111111
+    },
+    {
+      "model": "qwen",
+      "language": "ko",
+      "cohort": "revised_from_baseline_6",
+      "count": 6,
+      "full_hit_at_5": 2,
+      "full_hit_at_10": 5,
+      "full_hit_at_20": 5,
+      "partial_at_10": 0.9166666666666666
+    },
+    {
+      "model": "qwen",
+      "language": "ko",
+      "cohort": "revised_from_new_24",
+      "count": 24,
+      "full_hit_at_5": 10,
+      "full_hit_at_10": 13,
+      "full_hit_at_20": 14,
+      "partial_at_10": 0.75
+    },
+    {
+      "model": "qwen",
+      "language": "en",
+      "cohort": "revised_from_baseline_6",
+      "count": 6,
+      "full_hit_at_5": 2,
+      "full_hit_at_10": 2,
+      "full_hit_at_20": 4,
+      "partial_at_10": 0.5833333333333334
+    },
+    {
+      "model": "qwen",
+      "language": "en",
+      "cohort": "revised_from_new_24",
+      "count": 24,
+      "full_hit_at_5": 7,
+      "full_hit_at_10": 9,
+      "full_hit_at_20": 12,
+      "partial_at_10": 0.6222222222222222
+    }
+  ],
+  "by_required_doc_count": [
+    {
+      "model": "bge",
+      "language": "ko",
+      "required_doc_count": 2,
+      "count": 14,
+      "full_hit_at_5": 4,
+      "full_hit_at_10": 4,
+      "full_hit_at_20": 7,
+      "partial_at_10": 0.5714285714285714
+    },
+    {
+      "model": "bge",
+      "language": "ko",
+      "required_doc_count": 3,
+      "count": 12,
+      "full_hit_at_5": 1,
+      "full_hit_at_10": 1,
+      "full_hit_at_20": 3,
+      "partial_at_10": 0.5
+    },
+    {
+      "model": "bge",
+      "language": "ko",
+      "required_doc_count": 4,
+      "count": 2,
+      "full_hit_at_5": 0,
+      "full_hit_at_10": 0,
+      "full_hit_at_20": 1,
+      "partial_at_10": 0.375
+    },
+    {
+      "model": "bge",
+      "language": "ko",
+      "required_doc_count": 5,
+      "count": 2,
+      "full_hit_at_5": 0,
+      "full_hit_at_10": 0,
+      "full_hit_at_20": 0,
+      "partial_at_10": 0.5
+    },
+    {
+      "model": "bge",
+      "language": "en",
+      "required_doc_count": 2,
+      "count": 14,
+      "full_hit_at_5": 5,
+      "full_hit_at_10": 5,
+      "full_hit_at_20": 5,
+      "partial_at_10": 0.5357142857142857
+    },
+    {
+      "model": "bge",
+      "language": "en",
+      "required_doc_count": 3,
+      "count": 12,
+      "full_hit_at_5": 1,
+      "full_hit_at_10": 2,
+      "full_hit_at_20": 4,
+      "partial_at_10": 0.5555555555555555
+    },
+    {
+      "model": "bge",
+      "language": "en",
+      "required_doc_count": 4,
+      "count": 2,
+      "full_hit_at_5": 1,
+      "full_hit_at_10": 1,
+      "full_hit_at_20": 1,
+      "partial_at_10": 0.5
+    },
+    {
+      "model": "bge",
+      "language": "en",
+      "required_doc_count": 5,
+      "count": 2,
+      "full_hit_at_5": 0,
+      "full_hit_at_10": 1,
+      "full_hit_at_20": 1,
+      "partial_at_10": 0.9
+    },
+    {
+      "model": "kure",
+      "language": "ko",
+      "required_doc_count": 2,
+      "count": 14,
+      "full_hit_at_5": 4,
+      "full_hit_at_10": 4,
+      "full_hit_at_20": 7,
+      "partial_at_10": 0.5714285714285714
+    },
+    {
+      "model": "kure",
+      "language": "ko",
+      "required_doc_count": 3,
+      "count": 12,
+      "full_hit_at_5": 0,
+      "full_hit_at_10": 4,
+      "full_hit_at_20": 4,
+      "partial_at_10": 0.611111111111111
+    },
+    {
+      "model": "kure",
+      "language": "ko",
+      "required_doc_count": 4,
+      "count": 2,
+      "full_hit_at_5": 0,
+      "full_hit_at_10": 1,
+      "full_hit_at_20": 1,
+      "partial_at_10": 0.5
+    },
+    {
+      "model": "kure",
+      "language": "ko",
+      "required_doc_count": 5,
+      "count": 2,
+      "full_hit_at_5": 0,
+      "full_hit_at_10": 0,
+      "full_hit_at_20": 0,
+      "partial_at_10": 0.30000000000000004
+    },
+    {
+      "model": "kure",
+      "language": "en",
+      "required_doc_count": 2,
+      "count": 14,
+      "full_hit_at_5": 4,
+      "full_hit_at_10": 5,
+      "full_hit_at_20": 5,
+      "partial_at_10": 0.5
+    },
+    {
+      "model": "kure",
+      "language": "en",
+      "required_doc_count": 3,
+      "count": 12,
+      "full_hit_at_5": 1,
+      "full_hit_at_10": 2,
+      "full_hit_at_20": 3,
+      "partial_at_10": 0.5833333333333334
+    },
+    {
+      "model": "kure",
+      "language": "en",
+      "required_doc_count": 4,
+      "count": 2,
+      "full_hit_at_5": 1,
+      "full_hit_at_10": 1,
+      "full_hit_at_20": 1,
+      "partial_at_10": 0.5
+    },
+    {
+      "model": "kure",
+      "language": "en",
+      "required_doc_count": 5,
+      "count": 2,
+      "full_hit_at_5": 0,
+      "full_hit_at_10": 0,
+      "full_hit_at_20": 0,
+      "partial_at_10": 0.6000000000000001
+    },
+    {
+      "model": "qwen",
+      "language": "ko",
+      "required_doc_count": 2,
+      "count": 14,
+      "full_hit_at_5": 9,
+      "full_hit_at_10": 11,
+      "full_hit_at_20": 11,
+      "partial_at_10": 0.8928571428571429
+    },
+    {
+      "model": "qwen",
+      "language": "ko",
+      "required_doc_count": 3,
+      "count": 12,
+      "full_hit_at_5": 2,
+      "full_hit_at_10": 4,
+      "full_hit_at_20": 5,
+      "partial_at_10": 0.6666666666666666
+    },
+    {
+      "model": "qwen",
+      "language": "ko",
+      "required_doc_count": 4,
+      "count": 2,
+      "full_hit_at_5": 1,
+      "full_hit_at_10": 1,
+      "full_hit_at_20": 1,
+      "partial_at_10": 0.5
+    },
+    {
+      "model": "qwen",
+      "language": "ko",
+      "required_doc_count": 5,
+      "count": 2,
+      "full_hit_at_5": 0,
+      "full_hit_at_10": 2,
+      "full_hit_at_20": 2,
+      "partial_at_10": 1.0
+    },
+    {
+      "model": "qwen",
+      "language": "en",
+      "required_doc_count": 2,
+      "count": 14,
+      "full_hit_at_5": 6,
+      "full_hit_at_10": 8,
+      "full_hit_at_20": 9,
+      "partial_at_10": 0.6785714285714286
+    },
+    {
+      "model": "qwen",
+      "language": "en",
+      "required_doc_count": 3,
+      "count": 12,
+      "full_hit_at_5": 2,
+      "full_hit_at_10": 2,
+      "full_hit_at_20": 4,
+      "partial_at_10": 0.5277777777777778
+    },
+    {
+      "model": "qwen",
+      "language": "en",
+      "required_doc_count": 4,
+      "count": 2,
+      "full_hit_at_5": 1,
+      "full_hit_at_10": 1,
+      "full_hit_at_20": 1,
+      "partial_at_10": 0.5
+    },
+    {
+      "model": "qwen",
+      "language": "en",
+      "required_doc_count": 5,
+      "count": 2,
+      "full_hit_at_5": 0,
+      "full_hit_at_10": 0,
+      "full_hit_at_20": 2,
+      "partial_at_10": 0.8
+    }
+  ],
+  "paid_api_calls": 0,
+  "generated_answers": false,
+  "scope": "raw dense cosine retrieval; no PaperQA2 RCS, answer generation, or agent search",
+  "caveat": "Human gold/translation review pending. 30 questions share corpus/evidence; routed cells are reused, not independent repetitions."
+}

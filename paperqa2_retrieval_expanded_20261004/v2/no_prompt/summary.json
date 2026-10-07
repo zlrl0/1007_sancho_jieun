@@ -1,0 +1,196 @@
+{
+  "status": "COMPLETE",
+  "condition": "all_models_no_added_query_prompt",
+  "by_model_language": [
+    {
+      "model": "bge",
+      "language": "ko",
+      "count": 30,
+      "full_hit_at_5": 5,
+      "full_hit_at_10": 5,
+      "full_hit_at_20": 11,
+      "partial_at_10": 0.525
+    },
+    {
+      "model": "bge",
+      "language": "en",
+      "count": 30,
+      "full_hit_at_5": 7,
+      "full_hit_at_10": 9,
+      "full_hit_at_20": 11,
+      "partial_at_10": 0.5655555555555555
+    },
+    {
+      "model": "kure",
+      "language": "ko",
+      "count": 30,
+      "full_hit_at_5": 4,
+      "full_hit_at_10": 9,
+      "full_hit_at_20": 12,
+      "partial_at_10": 0.5644444444444444
+    },
+    {
+      "model": "kure",
+      "language": "en",
+      "count": 30,
+      "full_hit_at_5": 6,
+      "full_hit_at_10": 8,
+      "full_hit_at_20": 9,
+      "partial_at_10": 0.5399999999999999
+    },
+    {
+      "model": "qwen",
+      "language": "ko",
+      "count": 30,
+      "full_hit_at_5": 9,
+      "full_hit_at_10": 11,
+      "full_hit_at_20": 17,
+      "partial_at_10": 0.6866666666666668
+    },
+    {
+      "model": "qwen",
+      "language": "en",
+      "count": 30,
+      "full_hit_at_5": 8,
+      "full_hit_at_10": 11,
+      "full_hit_at_20": 14,
+      "partial_at_10": 0.5855555555555555
+    }
+  ],
+  "conditions": [
+    {
+      "ko_model": "bge",
+      "en_model": "bge",
+      "count": 60,
+      "full_hit_at_5": 12,
+      "full_hit_at_10": 14,
+      "full_hit_at_20": 22,
+      "partial_at_10": 0.5452777777777779
+    },
+    {
+      "ko_model": "bge",
+      "en_model": "kure",
+      "count": 60,
+      "full_hit_at_5": 11,
+      "full_hit_at_10": 13,
+      "full_hit_at_20": 20,
+      "partial_at_10": 0.5325
+    },
+    {
+      "ko_model": "bge",
+      "en_model": "qwen",
+      "count": 60,
+      "full_hit_at_5": 13,
+      "full_hit_at_10": 16,
+      "full_hit_at_20": 25,
+      "partial_at_10": 0.5552777777777778
+    },
+    {
+      "ko_model": "kure",
+      "en_model": "bge",
+      "count": 60,
+      "full_hit_at_5": 11,
+      "full_hit_at_10": 18,
+      "full_hit_at_20": 23,
+      "partial_at_10": 0.565
+    },
+    {
+      "ko_model": "kure",
+      "en_model": "kure",
+      "count": 60,
+      "full_hit_at_5": 10,
+      "full_hit_at_10": 17,
+      "full_hit_at_20": 21,
+      "partial_at_10": 0.5522222222222222
+    },
+    {
+      "ko_model": "kure",
+      "en_model": "qwen",
+      "count": 60,
+      "full_hit_at_5": 12,
+      "full_hit_at_10": 20,
+      "full_hit_at_20": 26,
+      "partial_at_10": 0.575
+    },
+    {
+      "ko_model": "qwen",
+      "en_model": "bge",
+      "count": 60,
+      "full_hit_at_5": 16,
+      "full_hit_at_10": 20,
+      "full_hit_at_20": 28,
+      "partial_at_10": 0.6261111111111111
+    },
+    {
+      "ko_model": "qwen",
+      "en_model": "kure",
+      "count": 60,
+      "full_hit_at_5": 15,
+      "full_hit_at_10": 19,
+      "full_hit_at_20": 26,
+      "partial_at_10": 0.6133333333333333
+    },
+    {
+      "ko_model": "qwen",
+      "en_model": "qwen",
+      "count": 60,
+      "full_hit_at_5": 17,
+      "full_hit_at_10": 22,
+      "full_hit_at_20": 31,
+      "partial_at_10": 0.6361111111111111
+    }
+  ],
+  "qwen_before_after": [
+    {
+      "condition": "with_prompt",
+      "language": "ko",
+      "count": 30,
+      "full_hit_at_5": 12,
+      "full_hit_at_10": 18,
+      "full_hit_at_20": 19,
+      "partial_at_10": 0.7833333333333333
+    },
+    {
+      "condition": "with_prompt",
+      "language": "en",
+      "count": 30,
+      "full_hit_at_5": 9,
+      "full_hit_at_10": 11,
+      "full_hit_at_20": 16,
+      "partial_at_10": 0.6144444444444445
+    },
+    {
+      "condition": "no_prompt",
+      "language": "ko",
+      "count": 30,
+      "full_hit_at_5": 9,
+      "full_hit_at_10": 11,
+      "full_hit_at_20": 17,
+      "partial_at_10": 0.6866666666666668
+    },
+    {
+      "condition": "no_prompt",
+      "language": "en",
+      "count": 30,
+      "full_hit_at_5": 8,
+      "full_hit_at_10": 11,
+      "full_hit_at_20": 14,
+      "partial_at_10": 0.5855555555555555
+    }
+  ],
+  "new_retrievals": 60,
+  "reused_bge_kure_retrievals": 120,
+  "paid_api_calls": 0,
+  "original_files_preserved": true,
+  "validation": "180 scores recomputed; input hashes match",
+  "protected_hashes": {
+    "C:\\Users\\je\\cislab\\benchmark\\paperqa2_retrieval_expanded_20261004\\v2\\results\\bge_retrieval.json": "d0f3d4920dc518a512693528e6d7260fdc2e04a39fa3c7e91432429de08ac577",
+    "C:\\Users\\je\\cislab\\benchmark\\paperqa2_retrieval_expanded_20261004\\v2\\results\\kure_retrieval.json": "82773f4e24053fa58c1751a08b52b65006c4094213ee66deb888a5e806403737",
+    "C:\\Users\\je\\cislab\\benchmark\\paperqa2_retrieval_expanded_20261004\\v2\\results\\qwen_retrieval.json": "91782cb74582010687f607c394e2d568b7aaad9d48de409aceb0fd1e23697cae",
+    "C:\\Users\\je\\cislab\\benchmark\\paperqa2_retrieval_expanded_20261004\\v2\\results\\summary.json": "0a22607e45f487b55ac55db5a67fbb1347197b7c5277a719ef925fa3513a5e89",
+    "C:\\Users\\je\\cislab\\benchmark\\paperqa2_retrieval_expanded_20261004\\v2\\questions_ko_en.json": "5e9f2f016da9e65883c7c0cfde3de362c72692addceaa525143f27d9b051f70b",
+    "C:\\Users\\je\\cislab\\benchmark\\paperqa2_retrieval_expanded_20261004\\v2\\retrieval_queries.json": "527ae1ad701406eb3a3b90c9c3830978213f7b433f7984daead3c73177fd595b",
+    "C:\\Users\\je\\cislab\\benchmark\\paperqa2_multilingual_experiment_20261004\\indexes\\qwen\\documents.npy": "c35cbc5591020236e9ac58c16147e3f72f6dda06ba9b1eb3c4c52cab980b874f"
+  },
+  "answer_generation": false
+}

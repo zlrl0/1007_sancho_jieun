@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE_PENDING_HUMAN_REVIEW",
+  "answers": 30,
+  "model": "gpt-4.1-mini",
+  "budget": {
+    "cap_usd": 3,
+    "completed_calls": 780,
+    "charged_usd_without_cache_discount": 0.4181108,
+    "uncertain_reserved_usd": 0,
+    "committed_usd": 0.4181108
+  },
+  "stage_full_hits": {
+    "retrieval": 22,
+    "after_rcs": 22,
+    "answer_input": 22,
+    "cited": 17
+  },
+  "unknown_citations": 1,
+  "truncated_calls": [],
+  "original_files_preserved": true,
+  "correctness_evaluation": "not performed"
+}

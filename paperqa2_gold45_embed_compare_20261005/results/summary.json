@@ -1,0 +1,717 @@
+{
+  "status": "COMPLETE",
+  "singles": [
+    {
+      "condition_id": "q4_ko",
+      "model": "q4",
+      "language": "ko",
+      "n": 41,
+      "hit@5": 31,
+      "hit@10": 34,
+      "hit@25": 38,
+      "mrr": 0.5209676657315424,
+      "by_group": {
+        "en": {
+          "n": 12,
+          "hit@5": 10,
+          "hit@10": 10,
+          "hit@25": 11
+        },
+        "ko": {
+          "n": 5,
+          "hit@5": 5,
+          "hit@10": 5,
+          "hit@25": 5
+        },
+        "kohanja": {
+          "n": 8,
+          "hit@5": 6,
+          "hit@10": 6,
+          "hit@25": 8
+        },
+        "zh": {
+          "n": 12,
+          "hit@5": 7,
+          "hit@10": 9,
+          "hit@25": 10
+        },
+        "ja": {
+          "n": 4,
+          "hit@5": 3,
+          "hit@10": 4,
+          "hit@25": 4
+        }
+      }
+    },
+    {
+      "condition_id": "q4_en",
+      "model": "q4",
+      "language": "en",
+      "n": 41,
+      "hit@5": 26,
+      "hit@10": 33,
+      "hit@25": 39,
+      "mrr": 0.4627866173815291,
+      "by_group": {
+        "en": {
+          "n": 12,
+          "hit@5": 9,
+          "hit@10": 10,
+          "hit@25": 12
+        },
+        "ko": {
+          "n": 5,
+          "hit@5": 4,
+          "hit@10": 5,
+          "hit@25": 5
+        },
+        "kohanja": {
+          "n": 8,
+          "hit@5": 5,
+          "hit@10": 6,
+          "hit@25": 8
+        },
+        "zh": {
+          "n": 12,
+          "hit@5": 5,
+          "hit@10": 8,
+          "hit@25": 10
+        },
+        "ja": {
+          "n": 4,
+          "hit@5": 3,
+          "hit@10": 4,
+          "hit@25": 4
+        }
+      }
+    },
+    {
+      "condition_id": "q4_orig",
+      "model": "q4",
+      "language": "orig",
+      "n": 16,
+      "hit@5": 10,
+      "hit@10": 11,
+      "hit@25": 15,
+      "mrr": 0.42409139924085576,
+      "by_group": {
+        "en": {
+          "n": 0,
+          "hit@5": 0,
+          "hit@10": 0,
+          "hit@25": 0
+        },
+        "ko": {
+          "n": 0,
+          "hit@5": 0,
+          "hit@10": 0,
+          "hit@25": 0
+        },
+        "kohanja": {
+          "n": 0,
+          "hit@5": 0,
+          "hit@10": 0,
+          "hit@25": 0
+        },
+        "zh": {
+          "n": 12,
+          "hit@5": 6,
+          "hit@10": 7,
+          "hit@25": 11
+        },
+        "ja": {
+          "n": 4,
+          "hit@5": 4,
+          "hit@10": 4,
+          "hit@25": 4
+        }
+      }
+    },
+    {
+      "condition_id": "q8_ko",
+      "model": "q8",
+      "language": "ko",
+      "n": 41,
+      "hit@5": 27,
+      "hit@10": 32,
+      "hit@25": 38,
+      "mrr": 0.5088887264497021,
+      "by_group": {
+        "en": {
+          "n": 12,
+          "hit@5": 10,
+          "hit@10": 11,
+          "hit@25": 12
+        },
+        "ko": {
+          "n": 5,
+          "hit@5": 5,
+          "hit@10": 5,
+          "hit@25": 5
+        },
+        "kohanja": {
+          "n": 8,
+          "hit@5": 6,
+          "hit@10": 7,
+          "hit@25": 8
+        },
+        "zh": {
+          "n": 12,
+          "hit@5": 3,
+          "hit@10": 6,
+          "hit@25": 9
+        },
+        "ja": {
+          "n": 4,
+          "hit@5": 3,
+          "hit@10": 3,
+          "hit@25": 4
+        }
+      }
+    },
+    {
+      "condition_id": "q8_en",
+      "model": "q8",
+      "language": "en",
+      "n": 41,
+      "hit@5": 27,
+      "hit@10": 32,
+      "hit@25": 37,
+      "mrr": 0.4789699381096095,
+      "by_group": {
+        "en": {
+          "n": 12,
+          "hit@5": 11,
+          "hit@10": 11,
+          "hit@25": 12
+        },
+        "ko": {
+          "n": 5,
+          "hit@5": 4,
+          "hit@10": 5,
+          "hit@25": 5
+        },
+        "kohanja": {
+          "n": 8,
+          "hit@5": 6,
+          "hit@10": 7,
+          "hit@25": 7
+        },
+        "zh": {
+          "n": 12,
+          "hit@5": 3,
+          "hit@10": 5,
+          "hit@25": 9
+        },
+        "ja": {
+          "n": 4,
+          "hit@5": 3,
+          "hit@10": 4,
+          "hit@25": 4
+        }
+      }
+    },
+    {
+      "condition_id": "q8_orig",
+      "model": "q8",
+      "language": "orig",
+      "n": 16,
+      "hit@5": 6,
+      "hit@10": 9,
+      "hit@25": 14,
+      "mrr": 0.32649770535122646,
+      "by_group": {
+        "en": {
+          "n": 0,
+          "hit@5": 0,
+          "hit@10": 0,
+          "hit@25": 0
+        },
+        "ko": {
+          "n": 0,
+          "hit@5": 0,
+          "hit@10": 0,
+          "hit@25": 0
+        },
+        "kohanja": {
+          "n": 0,
+          "hit@5": 0,
+          "hit@10": 0,
+          "hit@25": 0
+        },
+        "zh": {
+          "n": 12,
+          "hit@5": 3,
+          "hit@10": 5,
+          "hit@25": 10
+        },
+        "ja": {
+          "n": 4,
+          "hit@5": 3,
+          "hit@10": 4,
+          "hit@25": 4
+        }
+      }
+    },
+    {
+      "condition_id": "bge_ko",
+      "model": "bge",
+      "language": "ko",
+      "n": 41,
+      "hit@5": 29,
+      "hit@10": 33,
+      "hit@25": 38,
+      "mrr": 0.5313805307195797,
+      "by_group": {
+        "en": {
+          "n": 12,
+          "hit@5": 7,
+          "hit@10": 9,
+          "hit@25": 11
+        },
+        "ko": {
+          "n": 5,
+          "hit@5": 5,
+          "hit@10": 5,
+          "hit@25": 5
+        },
+        "kohanja": {
+          "n": 8,
+          "hit@5": 8,
+          "hit@10": 8,
+          "hit@25": 8
+        },
+        "zh": {
+          "n": 12,
+          "hit@5": 6,
+          "hit@10": 8,
+          "hit@25": 10
+        },
+        "ja": {
+          "n": 4,
+          "hit@5": 3,
+          "hit@10": 3,
+          "hit@25": 4
+        }
+      }
+    },
+    {
+      "condition_id": "bge_en",
+      "model": "bge",
+      "language": "en",
+      "n": 41,
+      "hit@5": 27,
+      "hit@10": 31,
+      "hit@25": 37,
+      "mrr": 0.48722711583665196,
+      "by_group": {
+        "en": {
+          "n": 12,
+          "hit@5": 10,
+          "hit@10": 12,
+          "hit@25": 12
+        },
+        "ko": {
+          "n": 5,
+          "hit@5": 3,
+          "hit@10": 3,
+          "hit@25": 4
+        },
+        "kohanja": {
+          "n": 8,
+          "hit@5": 6,
+          "hit@10": 6,
+          "hit@25": 7
+        },
+        "zh": {
+          "n": 12,
+          "hit@5": 5,
+          "hit@10": 7,
+          "hit@25": 10
+        },
+        "ja": {
+          "n": 4,
+          "hit@5": 3,
+          "hit@10": 3,
+          "hit@25": 4
+        }
+      }
+    },
+    {
+      "condition_id": "bge_orig",
+      "model": "bge",
+      "language": "orig",
+      "n": 16,
+      "hit@5": 10,
+      "hit@10": 12,
+      "hit@25": 15,
+      "mrr": 0.45338368739104035,
+      "by_group": {
+        "en": {
+          "n": 0,
+          "hit@5": 0,
+          "hit@10": 0,
+          "hit@25": 0
+        },
+        "ko": {
+          "n": 0,
+          "hit@5": 0,
+          "hit@10": 0,
+          "hit@25": 0
+        },
+        "kohanja": {
+          "n": 0,
+          "hit@5": 0,
+          "hit@10": 0,
+          "hit@25": 0
+        },
+        "zh": {
+          "n": 12,
+          "hit@5": 7,
+          "hit@10": 8,
+          "hit@25": 11
+        },
+        "ja": {
+          "n": 4,
+          "hit@5": 3,
+          "hit@10": 4,
+          "hit@25": 4
+        }
+      }
+    },
+    {
+      "condition_id": "kure_ko",
+      "model": "kure",
+      "language": "ko",
+      "n": 41,
+      "hit@5": 28,
+      "hit@10": 31,
+      "hit@25": 38,
+      "mrr": 0.4905170484247257,
+      "by_group": {
+        "en": {
+          "n": 12,
+          "hit@5": 8,
+          "hit@10": 8,
+          "hit@25": 11
+        },
+        "ko": {
+          "n": 5,
+          "hit@5": 4,
+          "hit@10": 5,
+          "hit@25": 5
+        },
+        "kohanja": {
+          "n": 8,
+          "hit@5": 8,
+          "hit@10": 8,
+          "hit@25": 8
+        },
+        "zh": {
+          "n": 12,
+          "hit@5": 5,
+          "hit@10": 7,
+          "hit@25": 10
+        },
+        "ja": {
+          "n": 4,
+          "hit@5": 3,
+          "hit@10": 3,
+          "hit@25": 4
+        }
+      }
+    },
+    {
+      "condition_id": "kure_en",
+      "model": "kure",
+      "language": "en",
+      "n": 41,
+      "hit@5": 27,
+      "hit@10": 29,
+      "hit@25": 35,
+      "mrr": 0.4406202324000483,
+      "by_group": {
+        "en": {
+          "n": 12,
+          "hit@5": 10,
+          "hit@10": 12,
+          "hit@25": 12
+        },
+        "ko": {
+          "n": 5,
+          "hit@5": 3,
+          "hit@10": 3,
+          "hit@25": 4
+        },
+        "kohanja": {
+          "n": 8,
+          "hit@5": 6,
+          "hit@10": 6,
+          "hit@25": 6
+        },
+        "zh": {
+          "n": 12,
+          "hit@5": 5,
+          "hit@10": 5,
+          "hit@25": 9
+        },
+        "ja": {
+          "n": 4,
+          "hit@5": 3,
+          "hit@10": 3,
+          "hit@25": 4
+        }
+      }
+    },
+    {
+      "condition_id": "kure_orig",
+      "model": "kure",
+      "language": "orig",
+      "n": 16,
+      "hit@5": 10,
+      "hit@10": 11,
+      "hit@25": 14,
+      "mrr": 0.4316658781128485,
+      "by_group": {
+        "en": {
+          "n": 0,
+          "hit@5": 0,
+          "hit@10": 0,
+          "hit@25": 0
+        },
+        "ko": {
+          "n": 0,
+          "hit@5": 0,
+          "hit@10": 0,
+          "hit@25": 0
+        },
+        "kohanja": {
+          "n": 0,
+          "hit@5": 0,
+          "hit@10": 0,
+          "hit@25": 0
+        },
+        "zh": {
+          "n": 12,
+          "hit@5": 7,
+          "hit@10": 7,
+          "hit@25": 10
+        },
+        "ja": {
+          "n": 4,
+          "hit@5": 3,
+          "hit@10": 4,
+          "hit@25": 4
+        }
+      }
+    }
+  ],
+  "fusions": [
+    {
+      "condition_id": "f1",
+      "label": "4B(ko) / BGE-m3-ko(en)",
+      "n": 41,
+      "hit@5": 28,
+      "hit@10": 36,
+      "hit@25": 39,
+      "mrr": 0.5316631539192515,
+      "by_group": {
+        "en": {
+          "n": 12,
+          "hit@5": 10,
+          "hit@10": 11,
+          "hit@25": 12
+        },
+        "ko": {
+          "n": 5,
+          "hit@5": 4,
+          "hit@10": 5,
+          "hit@25": 5
+        },
+        "kohanja": {
+          "n": 8,
+          "hit@5": 6,
+          "hit@10": 8,
+          "hit@25": 8
+        },
+        "zh": {
+          "n": 12,
+          "hit@5": 5,
+          "hit@10": 8,
+          "hit@25": 10
+        },
+        "ja": {
+          "n": 4,
+          "hit@5": 3,
+          "hit@10": 4,
+          "hit@25": 4
+        }
+      },
+      "union_hit": 39
+    },
+    {
+      "condition_id": "f2",
+      "label": "8B(ko) / BGE-m3-ko(en)",
+      "n": 41,
+      "hit@5": 29,
+      "hit@10": 36,
+      "hit@25": 39,
+      "mrr": 0.49673496057377287,
+      "by_group": {
+        "en": {
+          "n": 12,
+          "hit@5": 11,
+          "hit@10": 12,
+          "hit@25": 12
+        },
+        "ko": {
+          "n": 5,
+          "hit@5": 4,
+          "hit@10": 4,
+          "hit@25": 5
+        },
+        "kohanja": {
+          "n": 8,
+          "hit@5": 7,
+          "hit@10": 8,
+          "hit@25": 8
+        },
+        "zh": {
+          "n": 12,
+          "hit@5": 4,
+          "hit@10": 8,
+          "hit@25": 10
+        },
+        "ja": {
+          "n": 4,
+          "hit@5": 3,
+          "hit@10": 4,
+          "hit@25": 4
+        }
+      },
+      "union_hit": 39
+    },
+    {
+      "condition_id": "f3",
+      "label": "4B(ko) / 4B(en)",
+      "n": 41,
+      "hit@5": 31,
+      "hit@10": 36,
+      "hit@25": 38,
+      "mrr": 0.5208542017661848,
+      "by_group": {
+        "en": {
+          "n": 12,
+          "hit@5": 10,
+          "hit@10": 11,
+          "hit@25": 11
+        },
+        "ko": {
+          "n": 5,
+          "hit@5": 5,
+          "hit@10": 5,
+          "hit@25": 5
+        },
+        "kohanja": {
+          "n": 8,
+          "hit@5": 6,
+          "hit@10": 8,
+          "hit@25": 8
+        },
+        "zh": {
+          "n": 12,
+          "hit@5": 7,
+          "hit@10": 8,
+          "hit@25": 10
+        },
+        "ja": {
+          "n": 4,
+          "hit@5": 3,
+          "hit@10": 4,
+          "hit@25": 4
+        }
+      },
+      "union_hit": 39
+    },
+    {
+      "condition_id": "f4",
+      "label": "8B(ko) / 8B(en)",
+      "n": 41,
+      "hit@5": 28,
+      "hit@10": 33,
+      "hit@25": 38,
+      "mrr": 0.538878601073723,
+      "by_group": {
+        "en": {
+          "n": 12,
+          "hit@5": 11,
+          "hit@10": 12,
+          "hit@25": 12
+        },
+        "ko": {
+          "n": 5,
+          "hit@5": 5,
+          "hit@10": 5,
+          "hit@25": 5
+        },
+        "kohanja": {
+          "n": 8,
+          "hit@5": 5,
+          "hit@10": 7,
+          "hit@25": 8
+        },
+        "zh": {
+          "n": 12,
+          "hit@5": 4,
+          "hit@10": 5,
+          "hit@25": 9
+        },
+        "ja": {
+          "n": 4,
+          "hit@5": 3,
+          "hit@10": 4,
+          "hit@25": 4
+        }
+      },
+      "union_hit": 38
+    }
+  ],
+  "verdict": {
+    "single_ko_hit@10": {
+      "4B": 34,
+      "8B": 32,
+      "diff": -2,
+      "meaningful": false
+    },
+    "single_en_hit@10": {
+      "4B": 33,
+      "8B": 32,
+      "diff": -1,
+      "meaningful": false
+    },
+    "fusion_bge_hit@25": {
+      "4B": 39,
+      "8B": 39,
+      "diff": 0,
+      "meaningful": false
+    },
+    "fusion_same_hit@25": {
+      "4B": 38,
+      "8B": 38,
+      "diff": 0,
+      "meaningful": false
+    },
+    "threshold": 3
+  },
+  "scoreable": 41,
+  "excluded": [
+    "q09",
+    "q15",
+    "q24",
+    "q23"
+  ],
+  "paid_api_calls": 0,
+  "new_query_embeddings": 424,
+  "rcs": false,
+  "answer_generation": false
+}

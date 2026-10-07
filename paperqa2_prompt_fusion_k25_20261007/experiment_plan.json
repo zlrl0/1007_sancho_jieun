@@ -1,0 +1,184 @@
+{
+  "date": "2026-10-07",
+  "status": "COMPLETE",
+  "conditions": {
+    "A": [
+      "Qwen 무프롬프트 / Qwen 무프롬프트",
+      "q0",
+      "q0"
+    ],
+    "B": [
+      "Qwen 무프롬프트 / BGE-m3-ko",
+      "q0",
+      "bge"
+    ],
+    "C": [
+      "Qwen 프롬프트 / Qwen 프롬프트",
+      "qp",
+      "qp"
+    ],
+    "D": [
+      "Qwen 프롬프트 / BGE-m3-ko",
+      "qp",
+      "bge"
+    ]
+  },
+  "primary_comparison": "C vs D",
+  "prompt_effect_comparisons": [
+    "A vs C",
+    "B vs D"
+  ],
+  "query_prompt_exact": "Instruct: Given a web search query, retrieve relevant passages that answer the query\nQuery:",
+  "prompt_input": "prompt + question (no added space after Query:)",
+  "branch_k": 25,
+  "final_k": 25,
+  "rrf_constant": 60,
+  "weights": [
+    1,
+    1
+  ],
+  "tie_break": "source corpus order",
+  "questions": 30,
+  "chunks": 862,
+  "paid_api_calls": 0,
+  "new_embeddings": 0,
+  "answer_generation": false,
+  "human_gold_and_translation_review": "pending, inherited unchanged",
+  "runtime": {
+    "python": "3.12.10",
+    "numpy": "2.5.3"
+  },
+  "input_sha256": {
+    "C:\\Users\\je\\cislab\\benchmark\\paperqa2_prompt_fusion_k25_20261007\\run_experiment.py": "f5187d17c4a87b59fb9eef61c06d252f4ac5d920fa0f95a781e9ae05cf28b967",
+    "C:\\Users\\je\\cislab\\benchmark\\paperqa2_retrieval_expanded_20261004\\src\\run_retrieval.py": "c0d95f61becd3d2fdc6d1b9b0c8436db2c2748ede81198a807ee2f764cebe55e",
+    "C:\\Users\\je\\cislab\\benchmark\\README.md": "a26abf16a896ae2620c299a8ee2792e6fa539c5e6bbe6c799bd16b138dab5bab",
+    "C:\\Users\\je\\cislab\\benchmark\\chunks\\chosen_SEC_none.jsonl": "2e14e0c82300ca9201c483325b7ce74dfc67181ed82c701d4e73b9ed25ae9c86",
+    "C:\\Users\\je\\cislab\\benchmark\\paperqa2_retrieval_expanded_20261004\\v2\\questions_ko_en.json": "5e9f2f016da9e65883c7c0cfde3de362c72692addceaa525143f27d9b051f70b",
+    "C:\\Users\\je\\cislab\\benchmark\\paperqa2_retrieval_expanded_20261004\\v2\\retrieval_queries.json": "527ae1ad701406eb3a3b90c9c3830978213f7b433f7984daead3c73177fd595b",
+    "C:\\Users\\je\\cislab\\benchmark\\paperqa2_bilingual_fusion_k25_20261005\\results\\c04.json": "9c02d78078b0934579c5b203300cef8cc19a9c7042f49ba7dce46b4b3a52561e",
+    "C:\\Users\\je\\cislab\\benchmark\\paperqa2_bilingual_fusion_k25_20261005\\results\\c08.json": "be7afc19d8fc007b76b9a7d8120ef5b6e0b124746d92710e46705c6d7faf0331",
+    "C:\\Users\\je\\cislab\\benchmark\\paperqa2_bilingual_fusion_k25_20261005\\results\\summary.json": "73e0491b0921d501b70fc5dcee022fa71ff589457d2225dc6da347ff278f4105",
+    "C:\\Users\\je\\cislab\\benchmark\\paperqa2_retrieval_expanded_20261004\\v2\\indexes\\qwen\\query_manifest.json": "7fd490b015aadcf050f582550f2d44ba2b20e6904f10886f5623d054e0b67a13",
+    "C:\\Users\\je\\cislab\\benchmark\\paperqa2_retrieval_expanded_20261004\\v2\\indexes\\bge\\query_manifest.json": "11c27e3853dbad70bccb9d7b2ae361ae35b83173efa848ec5511b5127bddb927",
+    "C:\\Users\\je\\cislab\\benchmark\\paperqa2_retrieval_expanded_20261004\\v2\\no_prompt\\queries.npy": "8dc77c9c9701c071d4ee6f6c260b65ec1ec24f78e2b680ef6bc3cca57a77d175",
+    "C:\\Users\\je\\cislab\\benchmark\\paperqa2_retrieval_expanded_20261004\\v2\\no_prompt\\qwen_retrieval.json": "c7d00e30c57ae707df5c62f9a358074c339983aa81dba4c2ae1c719fac68aa70",
+    "C:\\Users\\je\\cislab\\benchmark\\paperqa2_multilingual_experiment_20261004\\indexes\\qwen\\documents.npy": "c35cbc5591020236e9ac58c16147e3f72f6dda06ba9b1eb3c4c52cab980b874f",
+    "C:\\Users\\je\\cislab\\benchmark\\paperqa2_multilingual_experiment_20261004\\indexes\\qwen\\manifest.json": "433a3c57cc7b4208dbfef18d0c9869b02fb4c39719ae4c2d1dc464b152ad493d",
+    "C:\\Users\\je\\cislab\\benchmark\\paperqa2_retrieval_expanded_20261004\\v2\\indexes\\qwen\\queries.npy": "e6c0a372a2eac2732da8ea8a58f3ee5ef048d7eaa1f05531993ce7fb981e52fd",
+    "C:\\Users\\je\\cislab\\benchmark\\paperqa2_retrieval_expanded_20261004\\v2\\results\\qwen_retrieval.json": "91782cb74582010687f607c394e2d568b7aaad9d48de409aceb0fd1e23697cae",
+    "C:\\Users\\je\\cislab\\benchmark\\paperqa2_retrieval_expanded_20261004\\v2\\indexes\\bge\\queries.npy": "da002ddbaadb6f1240fdb7e375586ea5a98167622224ff1ac3f7ffb15ed55138",
+    "C:\\Users\\je\\cislab\\benchmark\\paperqa2_retrieval_expanded_20261004\\v2\\results\\bge_retrieval.json": "d0f3d4920dc518a512693528e6d7260fdc2e04a39fa3c7e91432429de08ac577",
+    "C:\\Users\\je\\cislab\\benchmark\\paperqa2_multilingual_experiment_20261004\\indexes\\bge\\documents.npy": "676e48df0154ed2f7e00c77f7388de7baf1db4d2f60d5fcd36fae553b0935bf2",
+    "C:\\Users\\je\\cislab\\benchmark\\paperqa2_multilingual_experiment_20261004\\indexes\\bge\\manifest.json": "ab5804396a0f2fe0cdb5345f00615a97fdde83aebb6cd5bbad18f6ecc349d849"
+  },
+  "source_signatures": {
+    "q0": {
+      "model": "Qwen/Qwen3-Embedding-4B",
+      "model_revision": "5cf2132abc99cad020ac570b19d031efec650f2b",
+      "corpus_sha256": "2e14e0c82300ca9201c483325b7ce74dfc67181ed82c701d4e73b9ed25ae9c86",
+      "queries_sha256": "527ae1ad701406eb3a3b90c9c3830978213f7b433f7984daead3c73177fd595b",
+      "gold_sha256": "5e9f2f016da9e65883c7c0cfde3de362c72692addceaa525143f27d9b051f70b",
+      "document_vectors_sha256": "c35cbc5591020236e9ac58c16147e3f72f6dda06ba9b1eb3c4c52cab980b874f",
+      "source_manifest_sha256": "433a3c57cc7b4208dbfef18d0c9869b02fb4c39719ae4c2d1dc464b152ad493d",
+      "dtype": "bfloat16; normalized float32 storage",
+      "attention": "sdpa",
+      "batch_size": 1,
+      "query_prompt": "",
+      "metric": "cosine",
+      "tie_break": "source chunk order, stable descending sort",
+      "k": [
+        5,
+        10,
+        20
+      ],
+      "code_sha256": "791572a244ac77a470813bf9e5fceb473aafd420bccc3c6f91b95da86b11ccc5",
+      "packages": {
+        "torch": "2.13.0+cu126",
+        "transformers": "5.17.0",
+        "sentence-transformers": "6.1.0",
+        "numpy": "2.5.3"
+      },
+      "condition": "qwen_no_query_prompt"
+    },
+    "qp": {
+      "model": "Qwen/Qwen3-Embedding-4B",
+      "model_revision": "5cf2132abc99cad020ac570b19d031efec650f2b",
+      "corpus_sha256": "2e14e0c82300ca9201c483325b7ce74dfc67181ed82c701d4e73b9ed25ae9c86",
+      "queries_sha256": "527ae1ad701406eb3a3b90c9c3830978213f7b433f7984daead3c73177fd595b",
+      "gold_sha256": "5e9f2f016da9e65883c7c0cfde3de362c72692addceaa525143f27d9b051f70b",
+      "document_vectors_sha256": "c35cbc5591020236e9ac58c16147e3f72f6dda06ba9b1eb3c4c52cab980b874f",
+      "source_manifest_sha256": "433a3c57cc7b4208dbfef18d0c9869b02fb4c39719ae4c2d1dc464b152ad493d",
+      "dtype": "bfloat16; normalized float32 storage",
+      "attention": "sdpa",
+      "batch_size": 1,
+      "query_prompt": "Instruct: Given a web search query, retrieve relevant passages that answer the query\nQuery:",
+      "metric": "cosine",
+      "tie_break": "source chunk order, stable descending sort",
+      "k": [
+        5,
+        10,
+        20
+      ],
+      "code_sha256": "c0d95f61becd3d2fdc6d1b9b0c8436db2c2748ede81198a807ee2f764cebe55e",
+      "packages": {
+        "torch": "2.13.0+cu126",
+        "transformers": "5.17.0",
+        "sentence-transformers": "6.1.0",
+        "numpy": "2.5.3"
+      }
+    },
+    "bge": {
+      "model": "dragonkue/BGE-m3-ko",
+      "model_revision": "7074d66aa46562342193ca4feb3d89bf9dad71b4",
+      "corpus_sha256": "2e14e0c82300ca9201c483325b7ce74dfc67181ed82c701d4e73b9ed25ae9c86",
+      "queries_sha256": "527ae1ad701406eb3a3b90c9c3830978213f7b433f7984daead3c73177fd595b",
+      "gold_sha256": "5e9f2f016da9e65883c7c0cfde3de362c72692addceaa525143f27d9b051f70b",
+      "document_vectors_sha256": "676e48df0154ed2f7e00c77f7388de7baf1db4d2f60d5fcd36fae553b0935bf2",
+      "source_manifest_sha256": "ab5804396a0f2fe0cdb5345f00615a97fdde83aebb6cd5bbad18f6ecc349d849",
+      "dtype": "bfloat16; normalized float32 storage",
+      "attention": "sdpa",
+      "batch_size": 1,
+      "query_prompt": "",
+      "metric": "cosine",
+      "tie_break": "source chunk order, stable descending sort",
+      "k": [
+        5,
+        10,
+        20
+      ],
+      "code_sha256": "c0d95f61becd3d2fdc6d1b9b0c8436db2c2748ede81198a807ee2f764cebe55e",
+      "packages": {
+        "torch": "2.13.0+cu126",
+        "transformers": "5.17.0",
+        "sentence-transformers": "6.1.0",
+        "numpy": "2.5.3"
+      }
+    }
+  },
+  "provenance": {
+    "q0": {
+      "query_vectors": "C:\\Users\\je\\cislab\\benchmark\\paperqa2_retrieval_expanded_20261004\\v2\\no_prompt\\queries.npy",
+      "sha256": "8dc77c9c9701c071d4ee6f6c260b65ec1ec24f78e2b680ef6bc3cca57a77d175",
+      "source_results": "C:\\Users\\je\\cislab\\benchmark\\paperqa2_retrieval_expanded_20261004\\v2\\no_prompt\\qwen_retrieval.json",
+      "model": "Qwen/Qwen3-Embedding-4B",
+      "revision": "5cf2132abc99cad020ac570b19d031efec650f2b",
+      "query_prompt": ""
+    },
+    "qp": {
+      "query_vectors": "C:\\Users\\je\\cislab\\benchmark\\paperqa2_retrieval_expanded_20261004\\v2\\indexes\\qwen\\queries.npy",
+      "sha256": "e6c0a372a2eac2732da8ea8a58f3ee5ef048d7eaa1f05531993ce7fb981e52fd",
+      "source_results": "C:\\Users\\je\\cislab\\benchmark\\paperqa2_retrieval_expanded_20261004\\v2\\results\\qwen_retrieval.json",
+      "model": "Qwen/Qwen3-Embedding-4B",
+      "revision": "5cf2132abc99cad020ac570b19d031efec650f2b",
+      "query_prompt": "Instruct: Given a web search query, retrieve relevant passages that answer the query\nQuery:"
+    },
+    "bge": {
+      "query_vectors": "C:\\Users\\je\\cislab\\benchmark\\paperqa2_retrieval_expanded_20261004\\v2\\indexes\\bge\\queries.npy",
+      "sha256": "da002ddbaadb6f1240fdb7e375586ea5a98167622224ff1ac3f7ffb15ed55138",
+      "source_results": "C:\\Users\\je\\cislab\\benchmark\\paperqa2_retrieval_expanded_20261004\\v2\\results\\bge_retrieval.json",
+      "model": "dragonkue/BGE-m3-ko",
+      "revision": "7074d66aa46562342193ca4feb3d89bf9dad71b4",
+      "query_prompt": ""
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "independent_rrf_and_gold_scoring_cells": 120,
+  "summary_and_paired_changes_verified": true,
+  "input_hashes_unchanged": true
+}

@@ -1,0 +1,241 @@
+{
+  "status": "COMPLETE",
+  "conditions": [
+    {
+      "condition_id": "n01",
+      "label": "8B 한국어 단독",
+      "full_hit_20": 15,
+      "full_hit": 19,
+      "partial": 0.8144444444444444,
+      "union_full_hit": 19,
+      "baseline_id": "c01",
+      "baseline_label": "4B 한국어 단독",
+      "baseline_full_hit_20": 17,
+      "baseline_full_hit": 18,
+      "baseline_partial": 0.8,
+      "baseline_union_full_hit": 18,
+      "gained": [
+        "r17",
+        "r23",
+        "r25"
+      ],
+      "dropped": [
+        "r15",
+        "r19"
+      ]
+    },
+    {
+      "condition_id": "n02",
+      "label": "8B 영어 단독",
+      "full_hit_20": 17,
+      "full_hit": 18,
+      "partial": 0.8,
+      "union_full_hit": 18,
+      "baseline_id": "c02",
+      "baseline_label": "4B 영어 단독",
+      "baseline_full_hit_20": 14,
+      "baseline_full_hit": 15,
+      "baseline_partial": 0.7488888888888888,
+      "baseline_union_full_hit": 15,
+      "gained": [
+        "r06",
+        "r15",
+        "r25"
+      ],
+      "dropped": []
+    },
+    {
+      "condition_id": "n03",
+      "label": "8B/BGE-m3-ko · RRF",
+      "full_hit_20": 21,
+      "full_hit": 21,
+      "partial": 0.861111111111111,
+      "union_full_hit": 23,
+      "baseline_id": "c08",
+      "baseline_label": "4B/BGE-m3-ko · RRF",
+      "baseline_full_hit_20": 22,
+      "baseline_full_hit": 22,
+      "baseline_partial": 0.8777777777777778,
+      "baseline_union_full_hit": 22,
+      "gained": [],
+      "dropped": [
+        "r04"
+      ]
+    },
+    {
+      "condition_id": "n04",
+      "label": "8B/8B · RRF",
+      "full_hit_20": 20,
+      "full_hit": 21,
+      "partial": 0.85,
+      "union_full_hit": 23,
+      "baseline_id": "c04",
+      "baseline_label": "4B/4B · RRF",
+      "baseline_full_hit_20": 19,
+      "baseline_full_hit": 21,
+      "baseline_partial": 0.8555555555555555,
+      "baseline_union_full_hit": 21,
+      "gained": [
+        "r23",
+        "r25"
+      ],
+      "dropped": [
+        "r04",
+        "r14"
+      ]
+    }
+  ],
+  "hard_question_gold_ranks": [
+    {
+      "question_id": "r08",
+      "doc_id": "ko_02",
+      "4B/BGE": 16,
+      "8B/BGE": 15,
+      "8B/8B": 62
+    },
+    {
+      "question_id": "r08",
+      "doc_id": "kohanja_02",
+      "4B/BGE": 8,
+      "8B/BGE": 7,
+      "8B/8B": 20
+    },
+    {
+      "question_id": "r08",
+      "doc_id": "kohanja_01",
+      "4B/BGE": 7,
+      "8B/BGE": 8,
+      "8B/8B": 5
+    },
+    {
+      "question_id": "r10",
+      "doc_id": "en_01",
+      "4B/BGE": 12,
+      "8B/BGE": 17,
+      "8B/8B": 20
+    },
+    {
+      "question_id": "r10",
+      "doc_id": "ko_01",
+      "4B/BGE": 72,
+      "8B/BGE": 45,
+      "8B/8B": 132
+    },
+    {
+      "question_id": "r10",
+      "doc_id": "ko_02",
+      "4B/BGE": 9,
+      "8B/BGE": 7,
+      "8B/8B": 10
+    },
+    {
+      "question_id": "r13",
+      "doc_id": "en_03",
+      "4B/BGE": 1,
+      "8B/BGE": 1,
+      "8B/8B": 4
+    },
+    {
+      "question_id": "r13",
+      "doc_id": "ko_02",
+      "4B/BGE": 14,
+      "8B/BGE": 7,
+      "8B/8B": 1
+    },
+    {
+      "question_id": "r13",
+      "doc_id": "zh_02",
+      "4B/BGE": 76,
+      "8B/BGE": 142,
+      "8B/8B": 142
+    },
+    {
+      "question_id": "r16",
+      "doc_id": "ko_01",
+      "4B/BGE": 4,
+      "8B/BGE": 3,
+      "8B/8B": 3
+    },
+    {
+      "question_id": "r16",
+      "doc_id": "ja_01",
+      "4B/BGE": 38,
+      "8B/BGE": 49,
+      "8B/8B": 82
+    },
+    {
+      "question_id": "r16",
+      "doc_id": "en_01",
+      "4B/BGE": 2,
+      "8B/BGE": 11,
+      "8B/8B": 18
+    },
+    {
+      "question_id": "r20",
+      "doc_id": "en_03",
+      "4B/BGE": 2,
+      "8B/BGE": 2,
+      "8B/8B": 2
+    },
+    {
+      "question_id": "r20",
+      "doc_id": "zh_02",
+      "4B/BGE": 40,
+      "8B/BGE": 81,
+      "8B/8B": 113
+    },
+    {
+      "question_id": "r20",
+      "doc_id": "ko_02",
+      "4B/BGE": 1,
+      "8B/BGE": 1,
+      "8B/8B": 1
+    },
+    {
+      "question_id": "r25",
+      "doc_id": "en_01",
+      "4B/BGE": 2,
+      "8B/BGE": 1,
+      "8B/8B": 1
+    },
+    {
+      "question_id": "r25",
+      "doc_id": "en_03",
+      "4B/BGE": 83,
+      "8B/BGE": 57,
+      "8B/8B": 14
+    },
+    {
+      "question_id": "r29",
+      "doc_id": "en_02",
+      "4B/BGE": 289,
+      "8B/BGE": 327,
+      "8B/8B": 235
+    },
+    {
+      "question_id": "r29",
+      "doc_id": "kohanja_01",
+      "4B/BGE": 263,
+      "8B/BGE": 340,
+      "8B/8B": 456
+    },
+    {
+      "question_id": "r29",
+      "doc_id": "kohanja_02",
+      "4B/BGE": 133,
+      "8B/BGE": 208,
+      "8B/8B": 227
+    },
+    {
+      "question_id": "r29",
+      "doc_id": "zh_02",
+      "4B/BGE": 130,
+      "8B/BGE": 184,
+      "8B/8B": 122
+    }
+  ],
+  "paid_api_calls": 0,
+  "new_embeddings": 922,
+  "rcs": false,
+  "answer_generation": false
+}

@@ -1,0 +1,90 @@
+{
+  "conditions": {
+    "A": {
+      "label": "4B / BGE-m3-ko",
+      "full_hit_at_5": 10,
+      "full_hit_at_10": 15,
+      "full_hit_at_20": 22,
+      "full_hit_at_25": 23,
+      "partial_at_25": 0.8944444444444444,
+      "doc_hits": 72,
+      "doc_total": 82
+    },
+    "B": {
+      "label": "8B / BGE-m3-ko",
+      "full_hit_at_5": 8,
+      "full_hit_at_10": 15,
+      "full_hit_at_20": 22,
+      "full_hit_at_25": 22,
+      "partial_at_25": 0.8777777777777778,
+      "doc_hits": 71,
+      "doc_total": 82
+    },
+    "C": {
+      "label": "4B / 4B",
+      "full_hit_at_5": 12,
+      "full_hit_at_10": 17,
+      "full_hit_at_20": 22,
+      "full_hit_at_25": 22,
+      "partial_at_25": 0.8638888888888889,
+      "doc_hits": 70,
+      "doc_total": 82
+    },
+    "D": {
+      "label": "8B / 8B",
+      "full_hit_at_5": 13,
+      "full_hit_at_10": 15,
+      "full_hit_at_20": 21,
+      "full_hit_at_25": 23,
+      "partial_at_25": 0.8833333333333333,
+      "doc_hits": 71,
+      "doc_total": 82
+    }
+  },
+  "pairs": [
+    {
+      "comparison": "A -> B",
+      "gained": [],
+      "lost": [
+        "r14"
+      ],
+      "delta": -1,
+      "evidence_changes": [
+        {
+          "question_id": "r14",
+          "doc_id": "zh_03",
+          "rank_before": 17,
+          "rank_after": null
+        }
+      ]
+    },
+    {
+      "comparison": "C -> D",
+      "gained": [
+        "r25"
+      ],
+      "lost": [],
+      "delta": 1,
+      "evidence_changes": [
+        {
+          "question_id": "r10",
+          "doc_id": "ko_02",
+          "rank_before": null,
+          "rank_after": 6
+        },
+        {
+          "question_id": "r25",
+          "doc_id": "en_03",
+          "rank_before": null,
+          "rank_after": 13
+        },
+        {
+          "question_id": "r29",
+          "doc_id": "zh_02",
+          "rank_before": 20,
+          "rank_after": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "status": "COMPLETE",
+  "conditions": [
+    {
+      "condition_id": "c01",
+      "label": "한국어 단독 · Qwen",
+      "method": "single",
+      "n": 30,
+      "full_hit_count": 18,
+      "full_hit_rate": 0.6,
+      "mean_doc_coverage": 0.8,
+      "union_full_hit_count": 18,
+      "lost_full_hit_questions": 0,
+      "lost_required_doc_hits": 0,
+      "full_hit_count_at_20": 17,
+      "mean_doc_coverage_at_20": 0.7933333333333332,
+      "gained_questions": [
+        "r19"
+      ],
+      "dropped_questions": []
+    },
+    {
+      "condition_id": "c02",
+      "label": "영어 단독 · Qwen",
+      "method": "single",
+      "n": 30,
+      "full_hit_count": 15,
+      "full_hit_rate": 0.5,
+      "mean_doc_coverage": 0.7488888888888888,
+      "union_full_hit_count": 15,
+      "lost_full_hit_questions": 0,
+      "lost_required_doc_hits": 0,
+      "full_hit_count_at_20": 14,
+      "mean_doc_coverage_at_20": 0.7044444444444444,
+      "gained_questions": [
+        "r14"
+      ],
+      "dropped_questions": []
+    },
+    {
+      "condition_id": "c03",
+      "label": "한국어+영어 연결 · Qwen",
+      "method": "joined",
+      "n": 30,
+      "full_hit_count": 18,
+      "full_hit_rate": 0.6,
+      "mean_doc_coverage": 0.8211111111111111,
+      "union_full_hit_count": 18,
+      "lost_full_hit_questions": 0,
+      "lost_required_doc_hits": 0,
+      "full_hit_count_at_20": 15,
+      "mean_doc_coverage_at_20": 0.7488888888888888,
+      "gained_questions": [
+        "r02",
+        "r03",
+        "r14"
+      ],
+      "dropped_questions": []
+    },
+    {
+      "condition_id": "c04",
+      "label": "Qwen/Qwen · RRF",
+      "method": "rrf",
+      "n": 30,
+      "full_hit_count": 21,
+      "full_hit_rate": 0.7,
+      "mean_doc_coverage": 0.8555555555555555,
+      "union_full_hit_count": 21,
+      "lost_full_hit_questions": 0,
+      "lost_required_doc_hits": 0,
+      "full_hit_count_at_20": 19,
+      "mean_doc_coverage_at_20": 0.81,
+      "gained_questions": [
+        "r14",
+        "r19"
+      ],
+      "dropped_questions": []
+    },
+    {
+      "condition_id": "c05",
+      "label": "Qwen/Qwen · 번갈아 선택",
+      "method": "alternating",
+      "n": 30,
+      "full_hit_count": 20,
+      "full_hit_rate": 0.6666666666666666,
+      "mean_doc_coverage": 0.8488888888888888,
+      "union_full_hit_count": 21,
+      "lost_full_hit_questions": 1,
+      "lost_required_doc_hits": 1,
+      "full_hit_count_at_20": 18,
+      "mean_doc_coverage_at_20": 0.8044444444444444,
+      "gained_questions": [
+        "r02",
+        "r14"
+      ],
+      "dropped_questions": []
+    },
+    {
+      "condition_id": "c06",
+      "label": "KURE/Qwen · RRF",
+      "method": "rrf",
+      "n": 30,
+      "full_hit_count": 18,
+      "full_hit_rate": 0.6,
+      "mean_doc_coverage": 0.8144444444444444,
+      "union_full_hit_count": 22,
+      "lost_full_hit_questions": 4,
+      "lost_required_doc_hits": 6,
+      "full_hit_count_at_20": 16,
+      "mean_doc_coverage_at_20": 0.77,
+      "gained_questions": [
+        "r04",
+        "r30"
+      ],
+      "dropped_questions": []
+    },
+    {
+      "condition_id": "c07",
+      "label": "KURE/Qwen · 번갈아 선택",
+      "method": "alternating",
+      "n": 30,
+      "full_hit_count": 18,
+      "full_hit_rate": 0.6,
+      "mean_doc_coverage": 0.8255555555555555,
+      "union_full_hit_count": 22,
+      "lost_full_hit_questions": 4,
+      "lost_required_doc_hits": 5,
+      "full_hit_count_at_20": 17,
+      "mean_doc_coverage_at_20": 0.7755555555555556,
+      "gained_questions": [
+        "r30"
+      ],
+      "dropped_questions": []
+    },
+    {
+      "condition_id": "c08",
+      "label": "Qwen/BGE-m3-ko · RRF",
+      "method": "rrf",
+      "n": 30,
+      "full_hit_count": 22,
+      "full_hit_rate": 0.7333333333333333,
+      "mean_doc_coverage": 0.8777777777777778,
+      "union_full_hit_count": 22,
+      "lost_full_hit_questions": 0,
+      "lost_required_doc_hits": 0,
+      "full_hit_count_at_20": 21,
+      "mean_doc_coverage_at_20": 0.8388888888888888,
+      "gained_questions": [
+        "r02"
+      ],
+      "dropped_questions": []
+    },
+    {
+      "condition_id": "c09",
+      "label": "Qwen/BGE-m3-ko · 번갈아 선택",
+      "method": "alternating",
+      "n": 30,
+      "full_hit_count": 20,
+      "full_hit_rate": 0.6666666666666666,
+      "mean_doc_coverage": 0.8444444444444444,
+      "union_full_hit_count": 22,
+      "lost_full_hit_questions": 2,
+      "lost_required_doc_hits": 2,
+      "full_hit_count_at_20": 20,
+      "mean_doc_coverage_at_20": 0.8333333333333334,
+      "gained_questions": [],
+      "dropped_questions": []
+    },
+    {
+      "condition_id": "c10",
+      "label": "Qwen/KURE · RRF",
+      "method": "rrf",
+      "n": 30,
+      "full_hit_count": 21,
+      "full_hit_rate": 0.7,
+      "mean_doc_coverage": 0.861111111111111,
+      "union_full_hit_count": 23,
+      "lost_full_hit_questions": 2,
+      "lost_required_doc_hits": 2,
+      "full_hit_count_at_20": 20,
+      "mean_doc_coverage_at_20": 0.8333333333333334,
+      "gained_questions": [
+        "r02"
+      ],
+      "dropped_questions": []
+    },
+    {
+      "condition_id": "c11",
+      "label": "Qwen/원본 BGE-M3 · RRF",
+      "method": "rrf",
+      "n": 30,
+      "full_hit_count": 19,
+      "full_hit_rate": 0.6333333333333333,
+      "mean_doc_coverage": 0.8111111111111111,
+      "union_full_hit_count": 22,
+      "lost_full_hit_questions": 3,
+      "lost_required_doc_hits": 5,
+      "full_hit_count_at_20": 19,
+      "mean_doc_coverage_at_20": 0.7888888888888889,
+      "gained_questions": [],
+      "dropped_questions": []
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "a": "c01",
+      "b": "c03",
+      "k": 20,
+      "a_only": 3,
+      "b_only": 1,
+      "both": 14
+    },
+    {
+      "a": "c01",
+      "b": "c03",
+      "k": 25,
+      "a_only": 2,
+      "b_only": 2,
+      "both": 16
+    },
+    {
+      "a": "c01",
+      "b": "c04",
+      "k": 20,
+      "a_only": 0,
+      "b_only": 2,
+      "both": 17
+    },
+    {
+      "a": "c01",
+      "b": "c04",
+      "k": 25,
+      "a_only": 0,
+      "b_only": 3,
+      "both": 18
+    },
+    {
+      "a": "c02",
+      "b": "c04",
+      "k": 20,
+      "a_only": 1,
+      "b_only": 6,
+      "both": 13
+    },
+    {
+      "a": "c02",
+      "b": "c04",
+      "k": 25,
+      "a_only": 0,
+      "b_only": 6,
+      "both": 15
+    },
+    {
+      "a": "c01",
+      "b": "c08",
+      "k": 20,
+      "a_only": 1,
+      "b_only": 5,
+      "both": 16
+    },
+    {
+      "a": "c01",
+      "b": "c08",
+      "k": 25,
+      "a_only": 0,
+      "b_only": 4,
+      "both": 18
+    },
+    {
+      "a": "c04",
+      "b": "c05",
+      "k": 20,
+      "a_only": 1,
+      "b_only": 0,
+      "both": 18
+    },
+    {
+      "a": "c04",
+      "b": "c05",
+      "k": 25,
+      "a_only": 1,
+      "b_only": 0,
+      "both": 20
+    },
+    {
+      "a": "c06",
+      "b": "c07",
+      "k": 20,
+      "a_only": 0,
+      "b_only": 1,
+      "both": 16
+    },
+    {
+      "a": "c06",
+      "b": "c07",
+      "k": 25,
+      "a_only": 0,
+      "b_only": 0,
+      "both": 18
+    },
+    {
+      "a": "c08",
+      "b": "c09",
+      "k": 20,
+      "a_only": 1,
+      "b_only": 0,
+      "both": 20
+    },
+    {
+      "a": "c08",
+      "b": "c09",
+      "k": 25,
+      "a_only": 2,
+      "b_only": 0,
+      "both": 20
+    },
+    {
+      "a": "c04",
+      "b": "c08",
+      "k": 20,
+      "a_only": 1,
+      "b_only": 3,
+      "both": 18
+    },
+    {
+      "a": "c04",
+      "b": "c08",
+      "k": 25,
+      "a_only": 1,
+      "b_only": 2,
+      "both": 20
+    },
+    {
+      "a": "c08",
+      "b": "c10",
+      "k": 20,
+      "a_only": 1,
+      "b_only": 0,
+      "both": 20
+    },
+    {
+      "a": "c08",
+      "b": "c10",
+      "k": 25,
+      "a_only": 1,
+      "b_only": 0,
+      "both": 21
+    }
+  ],
+  "paid_api_calls": 0,
+  "new_embeddings": 0,
+  "rcs": false,
+  "answer_generation": false
+}

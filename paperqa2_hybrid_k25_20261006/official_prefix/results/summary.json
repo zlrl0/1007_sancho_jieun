@@ -1,0 +1,22 @@
+{
+  "questions": 30,
+  "conditions": {
+    "D0": {
+      "full_hit": 22,
+      "partial_mean": 0.8777777777777778,
+      "required_papers_found": 71,
+      "required_paper_pairs": 82
+    },
+    "H1": {
+      "full_hit": 22,
+      "partial_mean": 0.8777777777777778,
+      "required_papers_found": 71,
+      "required_paper_pairs": 82
+    }
+  },
+  "fresh_D0_identical_order_to_frozen_k25_count": 8,
+  "answers_generated": false,
+  "paid_api_calls": 0,
+  "models_loaded": true,
+  "caveat": "Fresh official-prefix embeddings; D0 is a fresh matched control, not the legacy frozen result. Retrieval only."
+}

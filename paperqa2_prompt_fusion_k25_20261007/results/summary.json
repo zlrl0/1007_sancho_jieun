@@ -1,0 +1,310 @@
+{
+  "status": "COMPLETE",
+  "conditions": {
+    "A": {
+      "label": "Qwen 무프롬프트 / Qwen 무프롬프트",
+      "n": 30,
+      "full_hit_count": 21,
+      "full_hit_rate": 0.7,
+      "mean_doc_coverage": 0.8555555555555556,
+      "required_doc_hits": 69,
+      "required_doc_total": 82,
+      "union_full_hit_count": 21
+    },
+    "B": {
+      "label": "Qwen 무프롬프트 / BGE-m3-ko",
+      "n": 30,
+      "full_hit_count": 22,
+      "full_hit_rate": 0.7333333333333333,
+      "mean_doc_coverage": 0.8777777777777778,
+      "required_doc_hits": 71,
+      "required_doc_total": 82,
+      "union_full_hit_count": 22
+    },
+    "C": {
+      "label": "Qwen 프롬프트 / Qwen 프롬프트",
+      "n": 30,
+      "full_hit_count": 22,
+      "full_hit_rate": 0.7333333333333333,
+      "mean_doc_coverage": 0.8638888888888889,
+      "required_doc_hits": 70,
+      "required_doc_total": 82,
+      "union_full_hit_count": 22
+    },
+    "D": {
+      "label": "Qwen 프롬프트 / BGE-m3-ko",
+      "n": 30,
+      "full_hit_count": 23,
+      "full_hit_rate": 0.7666666666666667,
+      "mean_doc_coverage": 0.8944444444444444,
+      "required_doc_hits": 72,
+      "required_doc_total": 82,
+      "union_full_hit_count": 23
+    }
+  },
+  "paired_comparisons": [
+    {
+      "a": "A",
+      "b": "C",
+      "gained_questions": [
+        "r23"
+      ],
+      "lost_questions": [],
+      "delta_full_hit": 1,
+      "changed_doc_evidence": [
+        {
+          "question_id": "r10",
+          "doc_id": "ko_02",
+          "a_hit": true,
+          "b_hit": false,
+          "best_accepted_ranks": {
+            "A": {
+              "final25_best": 22,
+              "ko_top25_best": 15,
+              "en_top25_best": null
+            },
+            "C": {
+              "final25_best": null,
+              "ko_top25_best": 23,
+              "en_top25_best": null
+            }
+          }
+        },
+        {
+          "question_id": "r23",
+          "doc_id": "en_01",
+          "a_hit": false,
+          "b_hit": true,
+          "best_accepted_ranks": {
+            "A": {
+              "final25_best": null,
+              "ko_top25_best": null,
+              "en_top25_best": null
+            },
+            "C": {
+              "final25_best": 13,
+              "ko_top25_best": 24,
+              "en_top25_best": 18
+            }
+          }
+        },
+        {
+          "question_id": "r29",
+          "doc_id": "zh_02",
+          "a_hit": false,
+          "b_hit": true,
+          "best_accepted_ranks": {
+            "A": {
+              "final25_best": null,
+              "ko_top25_best": null,
+              "en_top25_best": null
+            },
+            "C": {
+              "final25_best": 20,
+              "ko_top25_best": null,
+              "en_top25_best": 12
+            }
+          }
+        }
+      ]
+    },
+    {
+      "a": "B",
+      "b": "D",
+      "gained_questions": [
+        "r14"
+      ],
+      "lost_questions": [],
+      "delta_full_hit": 1,
+      "changed_doc_evidence": [
+        {
+          "question_id": "r14",
+          "doc_id": "zh_03",
+          "a_hit": false,
+          "b_hit": true,
+          "best_accepted_ranks": {
+            "B": {
+              "final25_best": null,
+              "ko_top25_best": null,
+              "en_top25_best": null
+            },
+            "D": {
+              "final25_best": 17,
+              "ko_top25_best": 9,
+              "en_top25_best": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "a": "C",
+      "b": "D",
+      "gained_questions": [
+        "r24"
+      ],
+      "lost_questions": [],
+      "delta_full_hit": 1,
+      "changed_doc_evidence": [
+        {
+          "question_id": "r08",
+          "doc_id": "kohanja_02",
+          "a_hit": false,
+          "b_hit": true,
+          "best_accepted_ranks": {
+            "C": {
+              "final25_best": null,
+              "ko_top25_best": null,
+              "en_top25_best": null
+            },
+            "D": {
+              "final25_best": 13,
+              "ko_top25_best": null,
+              "en_top25_best": 6
+            }
+          }
+        },
+        {
+          "question_id": "r10",
+          "doc_id": "ko_02",
+          "a_hit": false,
+          "b_hit": true,
+          "best_accepted_ranks": {
+            "C": {
+              "final25_best": null,
+              "ko_top25_best": 23,
+              "en_top25_best": null
+            },
+            "D": {
+              "final25_best": 10,
+              "ko_top25_best": 23,
+              "en_top25_best": 21
+            }
+          }
+        },
+        {
+          "question_id": "r24",
+          "doc_id": "en_01",
+          "a_hit": false,
+          "b_hit": true,
+          "best_accepted_ranks": {
+            "C": {
+              "final25_best": null,
+              "ko_top25_best": null,
+              "en_top25_best": null
+            },
+            "D": {
+              "final25_best": 15,
+              "ko_top25_best": null,
+              "en_top25_best": 4
+            }
+          }
+        },
+        {
+          "question_id": "r29",
+          "doc_id": "zh_02",
+          "a_hit": true,
+          "b_hit": false,
+          "best_accepted_ranks": {
+            "C": {
+              "final25_best": 20,
+              "ko_top25_best": null,
+              "en_top25_best": 12
+            },
+            "D": {
+              "final25_best": null,
+              "ko_top25_best": null,
+              "en_top25_best": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "a": "A",
+      "b": "B",
+      "gained_questions": [
+        "r23",
+        "r24"
+      ],
+      "lost_questions": [
+        "r14"
+      ],
+      "delta_full_hit": 1,
+      "changed_doc_evidence": [
+        {
+          "question_id": "r08",
+          "doc_id": "kohanja_02",
+          "a_hit": false,
+          "b_hit": true,
+          "best_accepted_ranks": {
+            "A": {
+              "final25_best": null,
+              "ko_top25_best": null,
+              "en_top25_best": null
+            },
+            "B": {
+              "final25_best": 12,
+              "ko_top25_best": null,
+              "en_top25_best": 6
+            }
+          }
+        },
+        {
+          "question_id": "r14",
+          "doc_id": "zh_03",
+          "a_hit": true,
+          "b_hit": false,
+          "best_accepted_ranks": {
+            "A": {
+              "final25_best": 24,
+              "ko_top25_best": null,
+              "en_top25_best": 16
+            },
+            "B": {
+              "final25_best": null,
+              "ko_top25_best": null,
+              "en_top25_best": null
+            }
+          }
+        },
+        {
+          "question_id": "r23",
+          "doc_id": "en_01",
+          "a_hit": false,
+          "b_hit": true,
+          "best_accepted_ranks": {
+            "A": {
+              "final25_best": null,
+              "ko_top25_best": null,
+              "en_top25_best": null
+            },
+            "B": {
+              "final25_best": 11,
+              "ko_top25_best": null,
+              "en_top25_best": 4
+            }
+          }
+        },
+        {
+          "question_id": "r24",
+          "doc_id": "en_01",
+          "a_hit": false,
+          "b_hit": true,
+          "best_accepted_ranks": {
+            "A": {
+              "final25_best": null,
+              "ko_top25_best": null,
+              "en_top25_best": null
+            },
+            "B": {
+              "final25_best": 13,
+              "ko_top25_best": null,
+              "en_top25_best": 4
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

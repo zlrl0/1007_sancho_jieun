@@ -1,0 +1,79 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RRF 통합 방법</title><style>:root{--ink:#182e35;--muted:#5b7078;--bg:#f3f5f5;--line:#dce4e6;--accent:#0a776b;--paper:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--bg);font:15px/1.8 "Malgun Gothic","Apple SD Gothic Neo",system-ui,sans-serif;word-break:keep-all;overflow-wrap:anywhere}
+a{color:var(--accent);text-underline-offset:4px}.wrap{max-width:1000px;margin:auto;padding:40px 40px 60px}
+.eyebrow{font-size:12px;letter-spacing:.15em;color:var(--accent);font-weight:800;margin-top:18px}h1{font-size:clamp(26px,3.4vw,38px);letter-spacing:-.05em;line-height:1.3;margin:12px 0}
+.lead{color:var(--muted);margin:8px 0 20px}.back{font-size:13px}
+section{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:26px;margin:0 0 20px}
+h2{font-size:20px;letter-spacing:-.03em;margin:0 0 6px}h2 small{font:600 13px Consolas,monospace;color:var(--accent);margin-right:8px}
+p{margin:10px 0}ul{padding-left:20px}li{margin:5px 0}.note{font-size:12px;color:var(--muted);padding-left:13px;border-left:2px solid #d9b06c}
+.formula{margin:14px 0;padding:14px 18px;background:#173b3c;color:#e6f3ef;border-radius:8px;font:15px/1.8 Consolas,monospace}
+ol.steps{padding-left:22px;margin:10px 0}ol.steps li{margin:6px 0}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px;margin:14px 0}
+table{width:100%;border-collapse:collapse;font-size:13px;line-height:1.6}th,td{text-align:left;padding:8px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#eef3f4;color:#425b65}tr:last-child td{border-bottom:0}td{font-variant-numeric:tabular-nums}.mono{font-family:Consolas,monospace;font-size:12px}
+.gold-row{background:#edf6f2}.best{font-weight:700;color:var(--accent)}
+.pill{display:inline-block;padding:0 8px;border-radius:999px;font:11px "Malgun Gothic",sans-serif;background:#e1f1ea;color:var(--accent);margin-left:4px}
+.cmp{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}.cmp div{padding:12px 14px;border:1px solid var(--line);border-radius:8px}.cmp b{display:block;font-size:14px}.cmp span{font-size:13px;color:var(--muted)}
+@media(max-width:700px){.wrap{padding:24px 16px}section{padding:18px 16px}.cmp{grid-template-columns:1fr}table{min-width:520px}}</style></head>
+<body><div class="wrap">
+<a class="back" href="../전체_실험_한페이지_요약.html#e04">← 전체 요약으로</a>
+<div class="eyebrow">EXPERIMENT 04 / METHOD</div>
+<h1>한국어·영어 검색 목록을 RRF로 합친 방법</h1>
+<p class="lead">같은 질문을 한국어와 영어로 각각 검색한 뒤, 두 순위 목록을 하나로 합친 방법과 실제 계산 예시입니다.</p>
+
+<section><h2><small>1</small>왜 두 목록을 합쳤나</h2>
+<p>같은 문항이라도 한국어 질문과 영어 질문이 찾아내는 정답 조각이 달랐습니다. Qwen으로 검색했을 때 r03·r06·r09·r15·r30은 한국어 질문으로만 완전 적중했고, r17·r19는 영어 질문으로만 완전 적중했습니다. 그래서 질문 하나를 두 언어로 검색하고 결과를 합치면 서로 놓친 조각을 메울 수 있다고 보고 이 실험을 했습니다.</p></section>
+
+<section><h2><small>2</small>RRF란</h2>
+<p>RRF(Reciprocal Rank Fusion, 역순위 융합)는 여러 검색 목록을 순위만으로 합치는 방법입니다. 각 목록에서 조각의 순위를 보고 아래 점수를 매긴 뒤 더합니다.</p>
+<div class="formula">RRF 점수 = Σ 1 / (60 + 그 목록에서의 순위)</div>
+<div class="table-wrap"><table><thead><tr><th>한 목록에서의 순위</th><th>1위</th><th>2위</th><th>5위</th><th>10위</th><th>20위</th><th>목록에 없음</th></tr></thead>
+<tbody><tr><td>받는 점수</td><td>0.0164</td><td>0.0161</td><td>0.0154</td><td>0.0143</td><td>0.0125</td><td>0</td></tr></tbody></table></div>
+<p>핵심은 두 가지입니다.</p>
+<ul><li><b>두 목록 모두에 나오면 점수를 두 번 받습니다.</b> 한쪽 목록 20위와 다른 쪽 20위를 합치면 0.0250이라, 한쪽에만 나온 1위(0.0164)보다 높습니다. 두 언어가 모두 관련 있다고 본 조각이 위로 올라옵니다.</li>
+<li><b>코사인 유사도 점수는 쓰지 않습니다.</b> Qwen과 BGE-m3-ko는 서로 다른 모델이라 유사도 값의 크기를 직접 비교할 수 없습니다. 순위는 모델과 상관없이 비교할 수 있습니다.</li></ul>
+<p>60은 RRF를 처음 제안한 논문이 쓴 값입니다. 숫자가 클수록 1위와 10위의 점수 차이가 줄어 한 목록의 상위권에 너무 끌려가지 않습니다. 두 목록의 가중치는 똑같이 두었습니다.</p>
+<p class="note">출처: Cormack, Clarke, Buettcher. Reciprocal Rank Fusion outperforms Condorcet and individual Rank Learning Methods. SIGIR 2009. <a href="https://doi.org/10.1145/1571941.1572114">DOI ↗</a> · <a href="https://cormack.uwaterloo.ca/cormacksigir09-rrf.pdf">PDF ↗</a></p></section>
+
+<section><h2><small>3</small>실험 04의 진행 순서</h2>
+<ol class="steps">
+<li>한국어 질문을 한국어 담당 모델로 검색해 상위 20개 조각을 뽑습니다.</li>
+<li>같은 질문의 영어 버전을 영어 담당 모델로 검색해 상위 20개 조각을 뽑습니다.</li>
+<li>두 목록을 합칩니다. 같은 조각이 양쪽에 있으면 하나로 묶으므로 후보는 최대 40개입니다.</li>
+<li>후보마다 RRF 점수를 계산하고 높은 순으로 정렬합니다. 점수가 같으면 원본 논문 조각 순서를 따릅니다.</li>
+<li>상위 20개만 남깁니다. 같은 논문의 다른 조각은 지우지 않습니다.</li>
+<li>이 20개 안에 필수 논문마다 정답 조각이 하나 이상 있으면 FullHit@20 적중으로 셉니다.</li></ol>
+<p class="note">이 실험의 모든 질문은 검색 지시문 없이 원문만 넣었습니다. 지시문을 붙인 같은 비교는 실험 11에서 했습니다.</p></section>
+
+<section><h2><small>4</small>실제 계산 예시 · r24</h2>
+<p><b>질문:</b> 신경세포와 사람 일차 연골세포에서 식물 유래 물질을 처리한 뒤 IL-6는 어떤 방향으로 변했는가? mRNA 발현과 배양 상층액 단백질 측정을 구분하라.</p>
+<p>필수 논문은 영어 논문 2편이고, 정답 조각은 en_03 #0030과 en_01 #0037입니다. 한국어는 Qwen, 영어는 BGE-m3-ko로 검색한 결과를 합쳐 남긴 최종 20개 전체입니다. 두 목록을 합친 후보는 모두 31개였고, 그중 RRF 점수가 높은 20개만 남았습니다.</p>
+<div class="table-wrap"><table><thead><tr><th>최종 순위</th><th>조각</th><th>한국어 순위</th><th>영어 순위</th><th>계산</th><th>RRF 점수</th></tr></thead><tbody><tr><td>1</td><td class='mono'>ko_02 #0018 </td><td>2</td><td>3</td><td class='mono'>1/(60+2) + 1/(60+3)</td><td>0.0320</td></tr><tr class="gold-row"><td>2</td><td class='mono'>en_03 #0030 <span class="pill">정답 조각</span></td><td>1</td><td>5</td><td class='mono'>1/(60+1) + 1/(60+5)</td><td>0.0318</td></tr><tr><td>3</td><td class='mono'>ko_02 #0008 </td><td>5</td><td>6</td><td class='mono'>1/(60+5) + 1/(60+6)</td><td>0.0305</td></tr><tr><td>4</td><td class='mono'>en_03 #0012 </td><td>13</td><td>1</td><td class='mono'>1/(60+13) + 1/(60+1)</td><td>0.0301</td></tr><tr><td>5</td><td class='mono'>ko_02 #0030 </td><td>7</td><td>8</td><td class='mono'>1/(60+7) + 1/(60+8)</td><td>0.0296</td></tr><tr><td>6</td><td class='mono'>ko_02 #0034 </td><td>3</td><td>14</td><td class='mono'>1/(60+3) + 1/(60+14)</td><td>0.0294</td></tr><tr><td>7</td><td class='mono'>ko_02 #0022 </td><td>8</td><td>13</td><td class='mono'>1/(60+8) + 1/(60+13)</td><td>0.0284</td></tr><tr><td>8</td><td class='mono'>en_03 #0032 </td><td>16</td><td>10</td><td class='mono'>1/(60+16) + 1/(60+10)</td><td>0.0274</td></tr><tr><td>9</td><td class='mono'>ko_02 #0028 </td><td>10</td><td>17</td><td class='mono'>1/(60+10) + 1/(60+17)</td><td>0.0273</td></tr><tr><td>10</td><td class='mono'>en_03 #0020 </td><td>—</td><td>2</td><td class='mono'>1/(60+2)</td><td>0.0161</td></tr><tr class="gold-row"><td>11</td><td class='mono'>en_01 #0037 <span class="pill">정답 조각</span></td><td>—</td><td>4</td><td class='mono'>1/(60+4)</td><td>0.0156</td></tr><tr><td>12</td><td class='mono'>ko_02 #0039 </td><td>4</td><td>—</td><td class='mono'>1/(60+4)</td><td>0.0156</td></tr><tr><td>13</td><td class='mono'>kohanja_02 #0045 </td><td>6</td><td>—</td><td class='mono'>1/(60+6)</td><td>0.0152</td></tr><tr><td>14</td><td class='mono'>en_03 #0013 </td><td>—</td><td>7</td><td class='mono'>1/(60+7)</td><td>0.0149</td></tr><tr><td>15</td><td class='mono'>ko_02 #0014 </td><td>—</td><td>9</td><td class='mono'>1/(60+9)</td><td>0.0145</td></tr><tr><td>16</td><td class='mono'>kohanja_02 #0066 </td><td>9</td><td>—</td><td class='mono'>1/(60+9)</td><td>0.0145</td></tr><tr><td>17</td><td class='mono'>en_03 #0016 </td><td>—</td><td>11</td><td class='mono'>1/(60+11)</td><td>0.0141</td></tr><tr><td>18</td><td class='mono'>ko_02 #0026 </td><td>11</td><td>—</td><td class='mono'>1/(60+11)</td><td>0.0141</td></tr><tr><td>19</td><td class='mono'>en_01 #0027 </td><td>—</td><td>12</td><td class='mono'>1/(60+12)</td><td>0.0139</td></tr><tr><td>20</td><td class='mono'>kohanja_02 #0061 </td><td>12</td><td>—</td><td class='mono'>1/(60+12)</td><td>0.0139</td></tr></tbody></table></div>
+<ul><li><b>en_03 #0030</b>은 한국어 1위, 영어 5위로 양쪽에서 점수를 받아 최종 2위가 됐습니다.</li>
+<li><b>en_01 #0037</b>은 한국어 상위 20개에는 없고 영어 목록에만 4위로 있었습니다. 한쪽 점수만 받았지만 최종 11위로 20개 안에 들어갔습니다.</li>
+<li>한국어 검색만 썼다면 en_01 #0037을 찾지 못해 이 문항은 실패였습니다. 영어 목록을 합쳤기 때문에 두 정답 조각을 모두 확보했습니다.</li></ul></section>
+
+<section><h2><small>5</small>함께 비교한 다른 방법</h2>
+<div class="cmp">
+<div><b>단독 검색</b><span>한국어 질문만, 또는 영어 질문만으로 검색해 상위 20개를 씁니다. 합치기 전 기준선입니다.</span></div>
+<div><b>질문 연결</b><span>한국어 질문, 줄바꿈, 영어 질문을 한 문장처럼 이어 Qwen으로 한 번 검색합니다.</span></div>
+<div><b>번갈아 선택</b><span>한국어 1위, 영어 1위, 한국어 2위, 영어 2위 순으로 번갈아 담습니다. 이미 담은 조각은 건너뛰고 20개를 채웁니다.</span></div>
+<div><b>RRF</b><span>위에서 설명한 방법입니다. 양쪽에 모두 나온 조각을 우대합니다.</span></div></div></section>
+
+<section><h2><small>6</small>결과 · FullHit@20</h2>
+<div class="table-wrap"><table><thead><tr><th>조건</th><th>한국어 모델</th><th>영어 모델</th><th>FullHit@20</th></tr></thead><tbody>
+<tr><td>한국어 단독</td><td>Qwen</td><td>—</td><td>17/30</td></tr>
+<tr><td>영어 단독</td><td>—</td><td>Qwen</td><td>14/30</td></tr>
+<tr><td>질문 연결</td><td colspan="2">Qwen으로 한 번 검색</td><td>15/30</td></tr>
+<tr><td>번갈아 선택</td><td>Qwen</td><td>Qwen</td><td>18/30</td></tr>
+<tr><td>RRF</td><td>Qwen</td><td>Qwen</td><td>19/30</td></tr>
+<tr><td>번갈아 선택</td><td>KURE</td><td>Qwen</td><td>17/30</td></tr>
+<tr><td>RRF</td><td>KURE</td><td>Qwen</td><td>16/30</td></tr>
+<tr><td>번갈아 선택</td><td>Qwen</td><td>BGE-m3-ko</td><td>20/30</td></tr>
+<tr class="gold-row"><td class="best">RRF</td><td class="best">Qwen</td><td class="best">BGE-m3-ko</td><td class="best">21/30</td></tr>
+<tr><td>RRF · 추가</td><td>Qwen</td><td>KURE</td><td>20/30</td></tr>
+<tr><td>RRF · 추가</td><td>Qwen</td><td>원본 BGE-M3</td><td>19/30</td></tr>
+</tbody></table></div>
+<p>한국어는 Qwen, 영어는 BGE-m3-ko로 검색해 RRF로 합친 조건이 가장 높았습니다. 이 조합이 이후 답변 생성 실험의 검색 방식이 됐습니다. 같은 30문항에서 여러 조건을 비교한 결과라 1~2문항 차이는 우위로 단정하지 않습니다.</p>
+<p class="note">원본 기록: <a href="RESULTS.md">기본 9조건 결과 ↗</a> · <a href="qwen_kure_rrf/RESULTS.md">KURE 추가 비교 ↗</a> · <a href="original_bge_m3_rrf/RESULTS.md">원본 BGE-M3 추가 비교 ↗</a></p></section>
+</div></body></html>
